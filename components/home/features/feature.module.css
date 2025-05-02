@@ -1,0 +1,109 @@
+.why_chooseus {
+    padding: 6rem 0px 6rem 0;
+  }
+
+
+  .why_chooseus .tyi-items .image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why_chooseus .tyi-items .image img {
+        width: 44%;
+  }
+  
+  .why_chooseus ul li {
+    margin-bottom: 30px;
+    position: relative;
+    list-style: none;
+  }
+  
+  .why_chooseus ul li.active a .tuia-card::before {
+    opacity: 1;
+  }
+  
+  .why_chooseus ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .why_chooseus ul li a .tuia-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+        box-shadow: 0 0 10px 0 #bbb;
+  }
+  
+  .why_chooseus ul li a .tuia-card::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background: var(--primary);
+    transition: 0.5s;
+    opacity: 0.4;
+  }
+  
+  .why_chooseus ul li a .tuia-card:hover {
+    transition: 0.5s;
+  }
+  
+  .why_chooseus ul li a .tuia-card:hover::before {
+    opacity: 1;
+  }
+  
+  .why_chooseus ul li a .tuia-card .ih-card {
+    display: flex;
+    align-items: center;
+  }
+  
+  .why_chooseus ul li a .tuia-card .ih-card .icone {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  
+  .why_chooseus ul li a .tuia-card .ih-card .icone img {
+    width: 100%;
+  }
+  
+  .why_chooseus ul li a .tuia-card .ih-card .haddings h5 {
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  .why_chooseus ul li a .tuia-card .content p {
+    color: #555;
+  }
+  
+  .why_chooseus ul li a .tuia-card .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .app-download {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .app-download a {
+    transition: all 0.3s ease-in;
+    margin: 8px;
+    display: inline-block;
+  }
+  
+  .app-download a:hover {
+    transition: all 0.3s ease-in;
+    transform: translateY(-5px);
+  }
+  
+  .app-download a img {
+    width: 150px;
+  }
+  

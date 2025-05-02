@@ -1,0 +1,26 @@
+.choose {
+    /* padding: 6rem 0; */
+  }
+  
+  .toolCard {
+    transition: 0.5s;
+  }
+  .toolCard:hover {
+    transition: 0.5s;
+    transform: translateY(-5px);
+    box-shadow: 0 30px 30px 0 #ddd;
+  }
+  .toolCard a p {
+    color: var(--primary);
+  }
+  .toolCard a {
+    text-decoration: none;
+  }
+.flaticonhome {
+    font-size: 60px;
+    background-image: linear-gradient(180deg, var(--rv-secondary) 0%, var(--rv-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+  }
+  
