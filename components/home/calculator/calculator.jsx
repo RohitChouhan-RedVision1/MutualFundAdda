@@ -205,7 +205,7 @@ export default function Calculator() {
             <div className="w-full md:w-1/3">
               {/* Invested Amount Section */}
               <div className="border-2 border-solid border-[var(--primary)] rounded-[10px] p-4 py-6">
-                <div className="flex justify-between w-full">
+                <div className="block justify-between w-full">
                   <label className="text-[var(--primary)] text-xl font-bold">
                     Invested Amount (₹)
                   </label>
@@ -219,7 +219,7 @@ export default function Calculator() {
             <div className="w-full md:w-1/3">
               {/* Invested Amount Section */}
               <div className="border-2 border-solid border-[var(--primary)] rounded-[10px] p-4 py-6">
-                <div className="flex justify-between w-full">
+                <div className="block justify-between w-full">
                   <label className="text-[var(--primary)] text-xl font-bold">
                     Estimated Return (₹)
                   </label>
@@ -232,7 +232,7 @@ export default function Calculator() {
             <div className="w-full md:w-1/3">
               {/* Invested Amount Section */}
               <div className="border-2 border-solid border-[var(--primary)] rounded-[10px] p-4 py-6">
-                <div className="flex justify-between w-full">
+                <div className="block justify-between w-full">
                   <label className="text-[var(--primary)] text-xl font-bold">
                     Final Amount (₹)
                   </label>

@@ -133,7 +133,7 @@ export default function MarketUpdate() {
                 onClick={() => handleCategorySelect(item)}
               >
                 <Image
-                  src={`/images/${item}.svg`}
+                  src={`/mf-adda/${item}.svg`}
                   width={70}
                   height={70}
                   className="mb-5 text-teal-500 "

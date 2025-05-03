@@ -16,7 +16,7 @@ const WhytoChooseus = ({sitedata}) => {
                   <span className={styles.investor_box}>
                     <div className={styles.icon}>
                       <img
-                        src="/mf-adda/oneswh.png"
+                        src="/mf-adda/one-stop-solutions.png"
                         className="icon1"
                         alt="One stop"
                       />
@@ -32,7 +32,7 @@ const WhytoChooseus = ({sitedata}) => {
                   <span className={styles.investor_box}>
                     <div className={styles.icon}>
                       <img
-                        src="/mf-adda/threesh.png"
+                        src="/mf-adda/end-to-end-support.png"
                         className="icon1"
                         alt="End to End"
                       />
@@ -51,7 +51,7 @@ const WhytoChooseus = ({sitedata}) => {
                   >
                     <div className={styles.icon}>
                       <img
-                        src="/mf-adda/twosh.png"
+                        src="/mf-adda/access.png"
                         className="icon1"
                         alt="24x7 Access"
                       />

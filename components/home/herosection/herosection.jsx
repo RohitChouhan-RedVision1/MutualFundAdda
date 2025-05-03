@@ -75,7 +75,7 @@ export const HeroSection = () => {
               variants={fadeInRight}
             >
               <Image
-                src="/mf-adda/HOME-BANNER_1.png"
+                src="/mf-adda/home-banner-img.svg"
                 alt="Hero Banner"
                 width={600}
                 height={600}
