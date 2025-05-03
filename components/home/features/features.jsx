@@ -37,7 +37,7 @@ function Features() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className={`bg-white py-24 ${styles.why_chooseus}`}>
+    <section className={`bg-white main_section ${styles.why_chooseus}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-center text-2xl lg:text-3xl font-bold text-black mb-10 uppercase">
           Track your Investment at ONE CLICK
@@ -59,7 +59,7 @@ function Features() {
               <h4 className="font-semibold mb-4">Download our app now</h4>
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.mywealthspace.mywealthspace"
+                  href="https://play.google.com/store/search?q=wealth+elite&c=apps"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -70,7 +70,7 @@ function Features() {
                   />
                 </a>
                 <a
-                  href="https://apps.apple.com/us/app/mywealthspace/id6472266519"
+                  href="https://apps.apple.com/us/app/wealth-elite/id1518518606"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -91,7 +91,7 @@ function Features() {
                 key={idx}
                 onMouseEnter={() => setHoveredIndex(idx)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="flex items-start gap-4 min-h-[150px] bg-white p-6 rounded-2xl shadow-md border-l-4 border-[var(--primary)] hover:shadow-lg transition"
+                className="flex flex-col md:flex-row items-start gap-4 min-h-[150px] bg-white p-6 rounded-2xl shadow-md border-l-4 border-[var(--primary)] hover:shadow-lg transition cursor-pointer"
               >
                 <img
                   src={feature.icon}
@@ -99,10 +99,10 @@ function Features() {
                   className="w-10 h-10"
                 />
                 <div>
-                  <h5 className="font-semibold text-gray-700 mb-1">
+                  <h5 className="font-semibold text-xl  mb-1">
                     {feature.title}
                   </h5>
-                  <p className="text-sm text-gray-600">{feature.description}</p>
+                  <p className="text-[16px] md:text-[18px] text-gray-600 text-justify">{feature.description}</p>
                 </div>
               </div>
             ))}

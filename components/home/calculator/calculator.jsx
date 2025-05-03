@@ -71,7 +71,7 @@ export default function Calculator() {
       <div className="container  mx-auto px-4 md:px-14   items-center text-center ">
         <div className="">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold uppercase">Financial Tools</h2>
+            <h2 className="text-2xl md:text-3xl font-bold uppercase">Power of Sip</h2>
           </div>
           <div className="flex flex-col gap-4 md:gap-20 md:flex-row pt-5 md:relative ">
             <Card className="w-full md:w-1/2 ">
@@ -83,7 +83,7 @@ export default function Calculator() {
                     <label className="block pt-2  text-black text-md md:text-xl font-semibold ">
                       Invested Amount (₹)
                     </label>
-                    <div className="relative w-64 h-12">
+                    <div className="relative w-32 md:w-64 h-12">
                       <input
                         type="number"
                         value={monthlyInvestment}
@@ -114,7 +114,7 @@ export default function Calculator() {
                     <label className="block pt-2  text-black text-md md:text-xl font-semibold">
                       Expected Return (%)
                     </label>
-                    <div className="relative w-64 h-12">
+                    <div className="relative w-32 md:w-64 h-12">
                       <input
                         type="number"
                         value={expectedReturn}
@@ -145,7 +145,7 @@ export default function Calculator() {
                     <label className="block pt-2  text-black text-md md:text-xl font-semibold">
                       Time Period (Y)
                     </label>
-                    <div className="relative w-64 h-12">
+                    <div className="relative w-32 md:w-64 h-12">
                       <input
                         type="number"
                         value={investmentDuration}
@@ -201,7 +201,7 @@ export default function Calculator() {
             </Card>
           </div>
 
-          <div className="flex flex-col md:flex-row pt-5  md:relative ">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10 pt-5  md:relative ">
             <div className="w-full md:w-1/3">
               {/* Invested Amount Section */}
               <div className="border-2 border-solid border-[var(--primary)] rounded-[10px] p-4 py-6">

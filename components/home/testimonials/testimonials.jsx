@@ -23,7 +23,11 @@ const testimonials = [
   // Add more testimonials as needed
 ];
 
-const TestimonialsSlider = () => {
+const TestimonialsSlider = ({testimonial}) => {
+  function createMarkup(item) {
+    return { __html: item };
+  }
+  console.log(testimonial)
   const sliderRef = React.useRef(null);
   const settings = {
     dots: false,
@@ -66,27 +70,35 @@ const TestimonialsSlider = () => {
           <ChevronRight className="w-10 h-10 text-gray-700" />
         </button>
         <Slider {...settings} ref={sliderRef}>
-          {testimonials.map((testimonial, index) => (
+          {testimonial.map((testimonial, index) => (
             <div key={index} className="px-4">
               <div className="">
                 <div className="relative text-5xl text-[#791c1c] top-[35px] left-10">
                   <img src="/mf-adda/arrow-4.png" alt="arrow.png" />
                 </div>
-                <div className="bg-white rounded-lg shadow-md p-6 m-4 h-[300px]">
-                  <p className="text-gray-700 text-sm min-h-[120px]">
-                    {testimonial.message}
-                  </p>
-                  <div className="flex items-center gap-3 mt-6">
+                <div className="bg-white rounded-lg shadow-md p-10 m-4 h-[350px] md:h-[300px]">
+                {testimonial?.content && (
+                    <div
+                      dangerouslySetInnerHTML={createMarkup(testimonial?.content)}
+                      className="italic [display:-webkit-box] text-gray-600 text-sm  [-webkit-line-clamp:5] [-webkit-box-orient:vertical] overflow-hidden mb-4"
+                    />
+                  )}
+                  <div className="flex  items-center gap-3 mt-4">
                     <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={40}
+                      src={testimonial?.image?.url}
+                      alt={testimonial?.author}
+                      width={80}
                       height={40}
                       className="rounded-full"
                     />
-                    <span className="font-semibold text-[var(--primary)]">
-                      {testimonial.name}
+                    <div className="flex flex-col">
+                    <span className="font-semibold text-xl">
+                      {testimonial?.author}
                     </span>
+                    <span className="text-[16px] text-gray-600">
+                      {testimonial?.designation}
+                    </span>
+                    </div>
                   </div>
                   <div className="absolute text-5xl text-[#791c1c] bottom-2 right-4 rotate-180">
                     “

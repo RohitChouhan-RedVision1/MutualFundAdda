@@ -45,7 +45,7 @@ const SubscribCard = () => {
         // viewport={{ once: false, amount: 0.2 }}
         // variants={fadeInVariants}
         // custom={1}
-        className="text-3xl font-semibold uppercase mb-4"
+        className="text-2xl md:text-3xl font-bold uppercase mb-4"
       >
         Our Esteemed Partners
       </motion.h2>
@@ -72,7 +72,7 @@ const SubscribCard = () => {
             <Image
               src={src}
               alt={`AMC Logo ${index + 1}`}
-              width={150}
+              width={200}
               height={100}
               className="opacity-50 hover:opacity-100 transition ease-in-out duration-150"
             />

@@ -7,20 +7,20 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-// import { getSiteData } from "@/lib/functions";
+import { getSiteData } from "@/lib/functions";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsFillPersonCheckFill } from "react-icons/bs";
 
 export const metadata = {
-  title: "About Us - {sitedata.websiteName}",
+  title: "About Us - Mutual Fund Adda",
   description:
-    "Learn more about {sitedata.websiteName}, your trusted financial partner in India.",
+    "Learn more about MutualFund Adda, your trusted financial partner in India.",
 };
 
 const AboutUsPage = async () => {
-  // const sitedata = await getSiteData();
+  const sitedata = await getSiteData();
 
   return (
     <div>
@@ -59,7 +59,7 @@ const AboutUsPage = async () => {
           {/* {sitedata.websiteName} - Company Overview */}
           <div className="mb-12">
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Who We Are – {sitedata.websiteName}
+              Who We Are – {sitedata?.websiteName}
             </h2>
             <p className="text-xl text-gray-700 mb-4">
               We are an <strong>AMFI-Registered Mutual Fund Distributor</strong>
@@ -69,7 +69,7 @@ const AboutUsPage = async () => {
               confidence.
             </p>
             <p className="text-xl text-gray-700 mb-4">
-              At <strong>{sitedata.websiteName}</strong>, we provide a one-stop
+              At <strong>{sitedata?.websiteName}</strong>, we provide a one-stop
               financial platform for Mutual Funds, Direct Equity, Fixed
               Deposits, Insurance, Home Loans, Loans Against Shares & Mutual
               Funds, Corporate FDs, Portfolio Management Services (PMS), and
@@ -86,7 +86,7 @@ const AboutUsPage = async () => {
             </p>
 
             <h3 className="text-2xl font-semibold text-gray-800 mt-6 mb-3">
-              Why Choose {sitedata.websiteName}?
+              Why Choose {sitedata?.websiteName}?
             </h3>
             <ul className="pl-6 space-y-3 text-xl text-gray-700">
               <li className="flex gap-2 ">
@@ -157,7 +157,7 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
                 Our Mission
               </h2>
               <p className="text-xl text-gray-700 mb-4 text-justify">
-                At {sitedata.websiteName}, our mission is to guide you through
+                At {sitedata?.websiteName}, our mission is to guide you through
                 the complex world of finance with ease. Whether you're looking
                 to invest, save, or borrow, we offer personalized financial
                 solutions that align with your goals. Our mission is to empower
@@ -169,7 +169,7 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
                 Our Vision
               </h2>
               <p className="text-xl text-gray-700 mb-4 text-justify">
-                At {sitedata.websiteName}, Our vision is to become the leading
+                At {sitedata?.websiteName}, Our vision is to become the leading
                 force in shaping a financially secure and prosperous India. We
                 aim to set new standards in the financial industry and be the
                 go-to partner for those seeking financial stability, growth, and

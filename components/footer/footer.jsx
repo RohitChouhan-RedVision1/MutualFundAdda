@@ -18,8 +18,8 @@ const formatDate = (dateStr) => {
   return `${day}-${month}-${year}`;
 };
 
-const registrationDate = formatDate(arn.euins[0].registrationDate);
-const expiryDate = formatDate(arn.euins[0].expiryDate);
+const registrationDate = formatDate(arn?.euins[0]?.registrationDate);
+const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
 
   const tools = [
     { href: "/tools/calculators", text: "Calculators" },
@@ -31,7 +31,7 @@ const expiryDate = formatDate(arn.euins[0].expiryDate);
   
   ];
   return (
-    <footer className="bg-[#000000] ">
+    <footer className="bg-[#000000] pt-[80px] ">
       <section className=" container mx-auto px-4  lg:px-10  ">
         <div className=" py-6 px-4 md:px-0 lg:-px-4 border-b-1 border-[#ffffff6b]">
           <div className="flex flex-col md:flex-row gap-20">
@@ -181,12 +181,12 @@ const expiryDate = formatDate(arn.euins[0].expiryDate);
         </div>
       </section>
       
-      <div className=" bg-[bg-[#050d1d]">
+      <div className="">
         <div className="container mx-auto px-4 lg:px-12 pl-2 flex flex-col lg:flex-row items-center justify-between">
         <div className="disclaimer-sec text-center text-gray-400 mt-4 text-lg">
               <div className="content-b ">
                 <p >
-                  AMFI Registered Mutual Fund Distributor <br /> ARN : <b className="text-white">{arn.arn}</b>{" "} 
+                  AMFI Registered Mutual Fund Distributor <br /> ARN : <b className="text-white">{arn?.arn}</b>{" "} 
                    Date of Registration: <b className="text-white">{registrationDate}</b> | Current Validity:{" "}
                   <b className="text-white">{}</b> TO <b className="text-white">{expiryDate}</b>
                 </p>

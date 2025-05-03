@@ -3,9 +3,9 @@ import React from "react";
 
 const Howwework = () => {
   return (
-    <div className="bg-white py-10">
+    <div className="bg-[#EFF1F9] main_section">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold uppercase">How We Work</h2>
+        <h2 className="text-2xl md:text-3xl font-bold uppercase">How We Work</h2>
       </div>
 
       <div className="container mx-auto px-4 md:px-14">
@@ -28,7 +28,7 @@ const Howwework = () => {
               <h5 className="text-xl font-semibold text-center mb-2 group-hover:text-white">
                 KYC Menu
               </h5>
-              <p className="text-gray-600 text-sm text-center group-hover:text-white">
+              <p className="text-gray-600 text-[16px] md:text-[18px] text-justify group-hover:text-white">
                 KYC is one time exercise while dealing in securities markets -
                 once KYC is done through a SEBI registered intermediary (broker,
                 DP, Mutual Fund etc), you need not undergo the same process
@@ -55,7 +55,7 @@ const Howwework = () => {
               <h5 className="text-xl font-semibold text-center mb-2 group-hover:text-white">
               CAS Upload
               </h5>
-              <p className="text-gray-600 text-sm text-center group-hover:text-white ">
+              <p className="text-gray-600 text-[16px] md:text-[18px] text-justify group-hover:text-white">
               Get a comprehensive analysis of your existing Mutual funds, we provide detailed analysis and health check-up of your Mutual Funds...!!
               Import your Mutual Fund details from the official statements and get a complete analysis for free.
               </p>
@@ -80,7 +80,7 @@ const Howwework = () => {
               <h5 className="text-xl font-semibold text-center mb-2 group-hover:text-white">
               Tools
               </h5>
-              <p className="text-gray-600 text-sm text-center group-hover:text-white">
+              <p className="text-gray-600 text-[16px] md:text-[18px] text-justify group-hover:text-white">
               Financial tools are one of the most efficient ways that can be used for life Goal Planning and investments. These financial tools are highly helpful in evaluating and planning for your investments.
               </p>
             </Link>

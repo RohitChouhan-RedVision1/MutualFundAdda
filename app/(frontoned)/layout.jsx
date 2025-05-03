@@ -9,7 +9,7 @@ import { getArn, getServiceData, getSiteData } from "@/lib/functions";
 import { Suspense } from "react";
 
 export default async function Layout({ children }) {
-  // const sitedata = await getSiteData();
+  const sitedata = await getSiteData();
   const services = await getServiceData();
   const arn=await getArn();
   // console.log(arn)
@@ -19,12 +19,12 @@ export default async function Layout({ children }) {
         <Tickers />
       </Suspense>
       <div className="hidden lg:block">
-        {/* <Topbar sitedata={sitedata} /> */}
+        <Topbar sitedata={sitedata} />
       </div>
       <Navbar servicedata={services}/>
       {children}
 
-      {/* <Footer sitedata={sitedata} servicedata={services} arn={arn[0]}/> */}
+      <Footer sitedata={sitedata} servicedata={services} arn={arn[0]}/>
 
       <WebPopup />
     </div>

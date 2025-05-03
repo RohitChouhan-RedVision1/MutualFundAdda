@@ -84,35 +84,35 @@ const WhytoChooseus = ({sitedata}) => {
                 <ul className="flex flex-col gap-4">
                   <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[18px] items-center text-gray-600">
+                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
                     <strong className="text-black">AMFI-Registered & Trusted:</strong> Backed by
                     expertise and ethical practices.
                     </span>
                   </li>
                   <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[18px] items-center text-gray-600">
+                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
                     <strong className="text-black">One-Stop Solution:</strong> Investment, loan, and
                     insurance products under one roof.
                     </span>
                   </li>
                   <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[18px] items-center text-gray-600">
+                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
                     <strong className="text-black">Technology-Driven:</strong> Smart, simple, and
                     transparent financial tracking.
                     </span>
                   </li>
                   <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[18px] items-center text-gray-600">
+                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
                     <strong className="text-black">Personalized Solutions:</strong> Tailored to your
                     financial goals and risk appetite.
                     </span>
                   </li>
                   <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[18px] items-center text-gray-600">
+                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
                     <strong className="text-black">Continuous Monitoring:</strong> Regular updates and
                     tracking for optimal growth.
                     </span>
