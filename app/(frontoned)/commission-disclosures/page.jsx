@@ -3,16 +3,16 @@ import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "@
 
 const CommissionDisclosurePage = () => {
   return (
-    <div>
+    <div className="container mx-auto  main_section ">
       {/* Header Section */}
-      <div className=" pt-[100px] pb-[20px] text-center">
-        <h1 className="text-5xl font-bold text-black">Commission Disclosures</h1>
+      <div className="px-4 md:px-20">
+        <h1 className="text-2xl md:text-3xl font-bold uppercase">Commission Disclosures</h1>
       </div>
 
       {/* Table Section */}
-      <div className="container mx-auto px-4 md:px-32 py-12">
-      <h2 className="text-2xl text-center font-bold text-[var(--primary)] mb-2">Commission Disclosure under SEBI Circular SEBI/IMD/CIR No.4 /168230/09</h2>
-      <p className="text-md text-center mb-4">The details of the commission earned by us from various Asset Management Companies (AMCs) are as below:</p>
+      <div className=" px-4 md:px-20">
+      <h2 className="text-xl  font-bold text-[var(--primary)] mb-2 mt-2">Commission Disclosure under SEBI Circular SEBI/IMD/CIR No.4 /168230/09</h2>
+      <p className="text-md  mb-4">The details of the commission earned by us from various Asset Management Companies (AMCs) are as below:</p>
         <Table className="border border-gray-300 w-full text-lg">
           <TableHeader>
             <TableRow className="bg-gray-800 text-white">

@@ -61,7 +61,7 @@ export default function Signin() {
         <>
             <div className="lg:w-1/2 xl:w-5/12 p-6 ">
                 <div className="mt-12 flex flex-col items-center">
-                    <h1 className="text-2xl xl:text-3xl font-extrabold">Forgot Password</h1>
+                    <h1 className="text-2xl md:text-3xl font-bold uppercase">Forgot Password</h1>
                     <div className="w-full flex-1 mt-8">
                         <div className="mx-auto max-w-xs">
                             <form onSubmit={handleSubmit}>

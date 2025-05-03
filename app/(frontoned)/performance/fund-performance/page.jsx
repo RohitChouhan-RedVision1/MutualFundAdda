@@ -136,7 +136,7 @@ export default function MarketUpdate() {
                   src={`/images/${item}.svg`}
                   width={70}
                   height={70}
-                  className="mb-5 text-teal-500"
+                  className="mb-5 text-teal-500 "
                   alt=""
                 />
                 <h1 className="font-bold text-gray-700 text-2xl text-center uppercase">

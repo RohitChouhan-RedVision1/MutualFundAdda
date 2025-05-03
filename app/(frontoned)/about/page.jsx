@@ -28,25 +28,7 @@ const AboutUsPage = async () => {
         <div className="">
           <div className="container mx-auto px-4 md:px-20 pt-12 pb-2 ">
             <div className="  mb-8">
-              <h1 className="text-5xl pb-5 font-bold text-black">About Us</h1>
-              <Breadcrumb>
-                <BreadcrumbList className="text-black text-center items-center">
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      className="text-center items-center text-black"
-                      href="/"
-                    >
-                      Home
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage className="text-black">
-                      About Us
-                    </BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
+              <h1 className="text-2xl md:text-3xl font-bold uppercase">About Us</h1>
               <p className="text-xl text-black mt-2">
                 Your Trusted Financial Partner
               </p>
@@ -58,17 +40,17 @@ const AboutUsPage = async () => {
 
           {/* {sitedata.websiteName} - Company Overview */}
           <div className="mb-12">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Who We Are – {sitedata?.websiteName}
             </h2>
-            <p className="text-xl text-gray-700 mb-4">
+            <p className="text-[16px] text-gray-700 mb-4">
               We are an <strong>AMFI-Registered Mutual Fund Distributor</strong>
               , offering a wide range of financial products with extensive
               industry experience. We’ve helped numerous investors make informed
               financial decisions, achieving their goals with clarity and
               confidence.
             </p>
-            <p className="text-xl text-gray-700 mb-4">
+            <p className="text-[16px] text-gray-700 mb-4">
               At <strong>{sitedata?.websiteName}</strong>, we provide a one-stop
               financial platform for Mutual Funds, Direct Equity, Fixed
               Deposits, Insurance, Home Loans, Loans Against Shares & Mutual
@@ -76,19 +58,19 @@ const AboutUsPage = async () => {
               Alternative Investment Funds (AIF).
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+            <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
               Smart Investment & Financial Solutions at Your Fingertips
             </h3>
-            <p className="text-xl text-gray-700 mb-4">
+            <p className="text-[16px] text-gray-700 mb-4">
               Our technology-driven platform enables you to manage and track
               your entire portfolio in one place—Mutual Funds, Stocks, Fixed
               Deposits, PMS, AIF, Insurance, and Loans—anytime, anywhere.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+            <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
               Why Choose {sitedata?.websiteName}?
             </h3>
-            <ul className="pl-6 space-y-3 text-xl text-gray-700">
+            <ul className="pl-6 space-y-3 text-[16px] text-gray-700">
               <li className="flex gap-2 ">
               <BsFillPersonCheckFill className="text-[var(--primary)] text-2xl"/>
                 <strong>AMFI-Registered & Trusted:</strong> Backed by
@@ -116,16 +98,16 @@ const AboutUsPage = async () => {
               </li>
             </ul>
 
-            <h3 className="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+            <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
               Clients Are Our Family
             </h3>
-            <p className="text-xl text-gray-700 mb-4">
+            <p className="text-[16px] text-gray-700 mb-4">
               We treat our clients like family. Your financial well-being is our
               top priority. That’s why every solution we offer is designed to
               simplify your journey and secure your future.
             </p>
 
-            <p className="text-xl text-gray-700">
+            <p className="text-[16px] text-gray-700">
               <strong>
                 Your One-Stop Destination for Financial & Investment Solutions
               </strong>
@@ -153,10 +135,10 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
 
           <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Our Mission
               </h2>
-              <p className="text-xl text-gray-700 mb-4 text-justify">
+              <p className="text-[16px] text-gray-700 mb-4 text-justify">
                 At {sitedata?.websiteName}, our mission is to guide you through
                 the complex world of finance with ease. Whether you're looking
                 to invest, save, or borrow, we offer personalized financial
@@ -165,10 +147,10 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
                 wealth and security.
               </p>
 
-              <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Our Vision
               </h2>
-              <p className="text-xl text-gray-700 mb-4 text-justify">
+              <p className="text-[16px] text-gray-700 mb-4 text-justify">
                 At {sitedata?.websiteName}, Our vision is to become the leading
                 force in shaping a financially secure and prosperous India. We
                 aim to set new standards in the financial industry and be the
@@ -188,32 +170,32 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
             </div>
           </div>
           <div className="mb-8">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Our Values
             </h2>
             <ul className="list-disc pl-5 space-y-4 flex-col items-start">
               <li>
-                <p className="text-xl text-gray-700">
+                <p className="text-[16px] text-gray-700">
                   <strong>Integrity:</strong> We uphold the highest standards of
                   honesty and transparency in all our dealings.
                 </p>
               </li>
               <li>
-                <p className="text-xl text-gray-700">
+                <p className="text-[16px] text-gray-700">
                   <strong>Customer-Centric:</strong> We put our clients at the
                   heart of everything we do, offering solutions that truly meet
                   their needs.
                 </p>
               </li>
               <li>
-                <p className="text-xl text-gray-700">
+                <p className="text-[16px] text-gray-700">
                   <strong>Innovation:</strong> We embrace new technologies and
                   ideas to improve our services and create more value for our
                   clients.
                 </p>
               </li>
               <li>
-                <p className="text-xl text-gray-700">
+                <p className="text-[16px] text-gray-700">
                   <strong>Commitment:</strong> We are committed to helping our
                   clients achieve their financial goals and secure their future.
                 </p>
@@ -253,13 +235,13 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
                 </div> */}
           {/* Conclusion and CTA */}
           <div className="text-center mt-8">
-            <p className="text-xl text-gray-700 mb-4">
+            <p className="text-[16px] text-gray-700 mb-4">
               We invite you to join us on this journey towards your financial
               success. Our team is always here to assist you with expert advice,
               innovative solutions, and unmatched dedication.
             </p>
             <Link href="/contactus" className="text-white mt-4 cursor-pointer">
-              <Button className="font-bold bg-[var(--primary)] px-4 py-2 rounded-lg text-2xl cursor-pointer">
+              <Button className="font-bold transform transition-transform duration-300 hover:scale-105 bg-[var(--primary)] px-4 py-2 rounded-lg text-2xl cursor-pointer">
                 Contact Us
               </Button>
             </Link>

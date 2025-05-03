@@ -84,27 +84,13 @@ export default function PayPremium() {
     // Determine which data set to use based on selected category
     const data = selectedCategory === 'li' ? fiimagedata : selectedCategory === 'hi' ? hiimagedata : giimagedata;
     return (
-        <section className="container mx-auto py-10">
+        <section className="container mx-auto main_section">
             <div className="page-header">
                 <div className="md:px-20 px-4  ">
                     <div className="items-center container mx-auto">
                         <div className="container mx-auto page-header-box">
-                            <h1 className="text-anime-style-2 text-4xl mb-2" data-cursor="-opaque">Pay Premium Online</h1>
-                            <Breadcrumb>
-                                <BreadcrumbList className="text-white">
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink href="/tools">Tools</BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbPage>Pay Premium Online</BreadcrumbPage>
-                                    </BreadcrumbItem>
-                                </BreadcrumbList>
-                            </Breadcrumb>
+                            <h1 className="text-2xl md:text-3xl font-bold uppercase" data-cursor="-opaque">Pay Premium Online</h1>
+                          
                         </div>
                     </div>
                 </div>

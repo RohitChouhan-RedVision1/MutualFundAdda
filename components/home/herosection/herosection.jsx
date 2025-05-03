@@ -60,13 +60,11 @@ export const HeroSection = () => {
 
               <motion.div variants={fadeInDown}>
                 <Link href="/contactus" target="_blank">
-                  <MotionButton
-                    className="mt-8 bg-[var(--primary)] hover:bg-[var(--primary)] text-white px-6 py-3 text-lg font-semibold rounded-md shadow"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                  <Button
+                    className="mt-8 bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow"
                   >
                     Start your Health Checkup
-                  </MotionButton>
+                  </Button>
                 </Link>
               </motion.div>
             </div>

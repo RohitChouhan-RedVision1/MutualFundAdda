@@ -58,31 +58,12 @@ const TopFeatures = () => {
         <div className="grid-cols-2 section-row flex flex-col md:flex-row justify-between  md:pr-5 mb-10 text-black align-items-center">
           <div>
             <div className="section-title dark-section">
-              <h3 className="wow fadeInUp text-4xl mb-2">Our Feature</h3>
-              <Breadcrumb>
-                <BreadcrumbList className="text-black text-center items-center">
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      className="text-center items-center text-black"
-                      href="/"
-                    >
-                      Home
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator className="text-black" />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>Tools</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-              <h2 className="text-anime-style-2 text-xl" data-cursor="-opaque">
-                Key features of our finance <span>and consulting</span>
-              </h2>
+              <h3 className="text-2xl md:text-3xl font-bold uppercase">Our Feature</h3>
             </div>
           </div>
           <div>
             <div className="section-btn wow fadeInUp" data-wow-delay="0.2s">
-              <Link href="/contactus"><Button className="bg-[var(--primary)] text-white">Contact Now</Button></Link>
+              <Link href="/contactus"><Button className="bg-[var(--primary)] bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">Contact Now</Button></Link>
             </div>
           </div>
         </div>

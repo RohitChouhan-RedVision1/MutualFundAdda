@@ -10,10 +10,11 @@ export const metadata = {
 
 const HomeLoans = () => {
     return (
-        <div className="container mx-auto px-4 md:px-20 py-10">
+        <div className='main_section'>
+        <div className="container mx-auto px-4 md:px-20">
             {/* Heading and Subheading */}
-            <div className="text-center pb-[50px]">
-                <h1 className="text-3xl font-bold text-gray-800">Home Loans</h1>
+            <div className=" pb-[50px]">
+                <h1 className="text-2xl md:text-3xl font-bold uppercase">Home Loans</h1>
                 <div className="em_bar mx-auto">
                     <div className="em_bar_bg" />
                 </div>
@@ -84,14 +85,15 @@ const HomeLoans = () => {
             </div>
 
             {/* Conclusion and CTA */}
-            <div className="text-center mt-8">
+            <div className=" mt-8">
                 <p className="text-lg text-gray-700 mb-4">
                     Make your dream home a reality with flexible and affordable home loan options. With low-interest rates, easy online applications, and quick approvals, it’s never been easier to get started. Apply today!
                 </p>
                 <Link href="/contactus" className="text-white">
-                    <Button className="bg-[var(--primary)] text-white rounded-2xl pl-8 pr-8 text-xl">Get Started with Your Home Loan Today!</Button>
+                    <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">Get Started with Your Home Loan Today!</Button>
                 </Link>
             </div>
+        </div>
         </div>
     );
 };

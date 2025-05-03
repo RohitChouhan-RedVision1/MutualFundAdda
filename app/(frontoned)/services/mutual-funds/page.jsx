@@ -11,11 +11,12 @@ export const metadata = {
 
 const MutualFunds = () => {
   return (
-    <div className="container mx-auto px-4 md:px-20 py-10">
+    <div className="main_section">
+      <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
 
-      <div className="text-center items-center  pb-[50px]">
-        <h1 className="text-3xl font-bold text-gray-800">Mutual Funds</h1>
+      <div className="items-center  pb-[50px]">
+        <h1 className="text-2xl md:text-3xl font-bold uppercase">Mutual Funds</h1>
         <div className="em_bar mx-auto">
           <div className="em_bar_bg" />
         </div>
@@ -163,7 +164,7 @@ const MutualFunds = () => {
       </div>
 
       {/* Conclusion and CTA */}
-      <div className="text-center mt-8">
+      <div className=" mt-8">
         <p className="text-lg text-gray-700 mb-4">
           Whether you&apos;re just starting out or are looking to diversify your
           portfolio, mutual funds are a great way to achieve your financial
@@ -172,11 +173,12 @@ const MutualFunds = () => {
           growth. Begin your investment journey today!
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] text-white rounded-2xl px-8 text-sm md:text-xl">
+          <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
             Start Investing in Mutual Funds Today!
           </Button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

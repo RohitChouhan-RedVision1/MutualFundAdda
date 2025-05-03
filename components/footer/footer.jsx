@@ -31,13 +31,13 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
   
   ];
   return (
-    <footer className="bg-[#000000] pt-[80px] ">
+    <footer className="bg-[#000000] pt-[60px] ">
       <section className=" container mx-auto px-4  lg:px-10  ">
         <div className=" py-6 px-4 md:px-0 lg:-px-4 border-b-1 border-[#ffffff6b]">
           <div className="flex flex-col md:flex-row gap-20">
             {/* About Us */}
             <div className="w-full md:w-[50%] lg:w-[30%]">
-              <h4 className="relative text-lg text-white font-semibold mb-4">
+              <h4 className="relative text-xl text-white font-semibold mb-4">
                 About Us
               </h4>
               <p className="text-gray-400  hover:text-[var(--secondary)]">
@@ -48,18 +48,18 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
               <ul className="space-y-3 text-md text-gray-400">
                 <li>
                  <Link href={`tel:${sitedata.mobile}`} className="flex gap-4 text-center items-center hover:text-white">
-                 <FaPhone className="text-md"/> 
-                 <span className="text-lg" >{sitedata.mobile}</span></Link>
+                 <FaPhone className="text-[16px]"/> 
+                 <span className="text-[16px]" >{sitedata.mobile}</span></Link>
                 </li>
                 <li>
                 <Link href={`mailto:${sitedata.email}`} className="flex gap-4 text-center items-center hover:text-white">
-                <FaEnvelope className="text-md"/>
-                  <span className="text-lg">{sitedata.email}</span></Link>
+                <FaEnvelope className="text-[16px]"/>
+                  <span className="text-[16px]">{sitedata.email}</span></Link>
                 </li>
                 <li>
                  <p  className="flex gap-4 hover:text-white">
-                 <FaMapMarker className="text-4xl"/>
-                 <span className="text-lg">
+                 <FaMapMarker className="text-2xl"/>
+                 <span className="text-[16px]">
                  <a href={`${sitedata.mapurl}`} target="_blank" rel="noopener noreferrer">
     {sitedata.address}
   </a>
@@ -87,36 +87,36 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
           <div>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-20">
             <div>
-            <h4 className="relative text-lg text-white font-semibold mb-4 ">
+            <h4 className="relative text-xl text-white font-semibold mb-4 ">
                 Quick Links
               </h4>
               <ul className="space-y-3 text-md text-gray-400">
                 <li>
                  <Link href={`/aboutus`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >About us</span></Link>
+                 <span className="text-[16px]" >About us</span></Link>
                 </li>
                 <li>
                  <Link href={`/blogs`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >Blogs</span></Link>
+                 <span className="text-[16px]" >Blogs</span></Link>
                 </li>
 
                 <li>
                  <Link href={`/faqs`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >Faq's</span></Link>
+                 <span className="text-[16px]" >Faq's</span></Link>
                 </li>
                 <li>
                  <Link href={`/contactus`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >Contact us</span></Link>
+                 <span className="text-[16px]" >Contact us</span></Link>
                 </li>
               </ul>
             </div>
 
             {/* Services */}
             <div>
-            <h4 className="relative text-lg text-white font-semibold mb-4">
+            <h4 className="relative text-xl text-white font-semibold mb-4">
                 Services
               </h4>
-              <ul className="space-y-2 text-lg text-gray-400 ">
+              <ul className="space-y-2 text-[16px] text-gray-400 ">
                 {servicedata.map((item,index) => (
                   <li key={index}>
                     <Link href={`/services/${item.link}`} className="hover:text-[var(--secondary)]">
@@ -129,10 +129,10 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
 
             {/* Tools */}
             <div>
-            <h4 className="relative text-lg text-white font-semibold mb-4 ">
+            <h4 className="relative text-xl text-white font-semibold mb-4 ">
                 Tools
               </h4>
-              <ul className="space-y-2 text-lg text-gray-400">
+              <ul className="space-y-2 text-[16px] text-gray-400">
                 {tools.map((item,index) => (
                   <li key={index}>
                     <Link href={item.href} className="hover:hover:text-[var(--secondary)]">
@@ -144,33 +144,33 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
             </div>
 
             <div>
-            <h4 className="relative text-lg text-white font-semibold mb-4 ">
+            <h4 className="relative text-xl text-white font-semibold mb-4 ">
                 Quick Links
               </h4>
               <ul className="space-y-3 text-md text-gray-400">
                 <li>
                  <Link href={`/aboutus`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >About us</span></Link>
+                 <span className="text-[16px]" >About us</span></Link>
                 </li>
                 <li>
                  <Link href={`/blogs`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >Blogs</span></Link>
+                 <span className="text-[16px]" >Blogs</span></Link>
                 </li>
 
                 <li>
                  <Link href={`/faqs`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >Faq's</span></Link>
+                 <span className="text-[16px]" >Faq's</span></Link>
                 </li>
                 <li>
                  <Link href={`/contactus`} className="flex gap-4 text-center items-center hover:text-white"> 
-                 <span className="text-lg" >Contact us</span></Link>
+                 <span className="text-[16px]" >Contact us</span></Link>
                 </li>
               </ul>
             </div>
 
             {/* Get in Touch */}
             {/* <div>
-            <h4 className="relative text-lg text-white font-semibold mb-4 pl-4 border-l-4 border-[var(--primary)]">
+            <h4 className="relative text-[16px] text-white font-semibold mb-4 pl-4 border-l-4 border-[var(--primary)]">
                 Get In Touch
               </h4>
               
@@ -183,7 +183,7 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
       
       <div className="">
         <div className="container mx-auto px-4 lg:px-12 pl-2 flex flex-col lg:flex-row items-center justify-between">
-        <div className="disclaimer-sec text-center text-gray-400 mt-4 text-lg">
+        <div className="disclaimer-sec text-center text-gray-400 mt-4 text-[16px]">
               <div className="content-b ">
                 <p >
                   AMFI Registered Mutual Fund Distributor <br /> ARN : <b className="text-white">{arn?.arn}</b>{" "} 
@@ -237,40 +237,38 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
 
       {/* Copyright Section */}
       <div className=" bg-[var(--primary)]">
-        <div className="container mx-auto px-4 lg:px-10 flex flex-col gap-5 lg:flex-row items-center justify-between">
-          {/* Logo */}
-          <div className="">
-            <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="Logo"
-                width={150}
-                height={100}
-              />
-            </Link>
-          </div>
+      <div className="container mx-auto px-4 lg:px-10  flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
+  
+  {/* Left: Logo */}
+  <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
+    <Link href="/">
+      <Image
+        src="/logo.png"
+        alt="Logo"
+        width={150}
+        height={100}
+      />
+    </Link>
+  </div>
 
-          <div>
-            <p className=" text-white text-center">
-                  {" "}
-                  <Link href="/privacy-policy">Privacy Policy</Link>|{" "}
-                  <Link href="/commission-disclosures">
-                    Commission Disclosures
-                  </Link>{" "}
-                  |
-                  <Link href="/AMFI_Code-of-Conduct1.pdf" target="_" download>
-                    Code of Conducts
-                  </Link>
-                </p>
-          </div>
+  {/* Center: Policy Links */}
+  <div className="w-full lg:w-1/3 text-center">
+    <p>
+      <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link> |{" "}
+      <Link href="/commission-disclosures" className="hover:underline">Commission Disclosures</Link> |{" "}
+      <Link href="/AMFI_Code-of-Conduct1.pdf" target="_blank" download className="hover:underline">
+        Code of Conducts
+      </Link>
+    </p>
+  </div>
 
-          {/* Copyright Text */}
-          <div className="text-center text-white">
-            <p>© 2025 {sitedata.websiteName} All right reserved</p>
-          </div>
+  {/* Right: Copyright */}
+  <div className="w-full lg:w-1/3 flex justify-center lg:justify-end text-center lg:text-right">
+    <p>© 2025 {sitedata.websiteName} All right reserved</p>
+  </div>
 
-          
-        </div>
+</div>
+
       </div>
     </footer>
   );

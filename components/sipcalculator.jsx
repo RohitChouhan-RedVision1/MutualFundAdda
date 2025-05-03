@@ -47,19 +47,19 @@ const SipCalculator = ({ data }) => {
 
     return (
         <div className="sip-calculator container mx-auto p-3 sticky top-0 z-10">
-            <h1 className="text-2xl font-bold text-center mb-2">SIP Calculator</h1>
+            <h2 className="text-2xl font-bold text-center mb-2">SIP Calculator</h2>
 
             {/* Investment Type Toggle */}
             <div className="flex justify-center space-x-4 mb-8">
                 <Button
                     onClick={() => { setIsMonthlySip(true) }}
-                    className={`text-xs rounded-full ${isMonthlySip ? 'bg-[var(--rv-bg-primary)]' : 'text-white'}`}
+                    className={`text-xs rounded-full ${isMonthlySip ? 'bg-[var(--rv-bg-primary)] text-white' : 'text-black border'}`}
                 >
                     Monthly SIP
                 </Button>
                 <Button
                     onClick={() => { setIsMonthlySip(false) }}
-                    className={`text-xs rounded-full ${!isMonthlySip ? 'bg-[var(--rv-bg-primary)]' : 'text-white'}`}
+                    className={`text-xs rounded-full ${!isMonthlySip ? 'bg-[var(--rv-bg-primary)] text-white' : 'text-black border'}`}
                 >
                     One-Time Investment
                 </Button>

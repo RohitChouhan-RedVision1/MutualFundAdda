@@ -162,7 +162,7 @@ export default function ContactForm({ sitedata }) {
       <div>
         <button
           type="submit"
-          className="bg-[#0a6396] text-white px-8 py-2 rounded hover:bg-[#085380] transition-colors"
+          className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow"
           disabled={loading}
         >
           {loading ? "Submitting..." : "Submit"}

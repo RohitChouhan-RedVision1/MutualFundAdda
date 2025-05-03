@@ -61,29 +61,12 @@ export default function Page() {
     }, [totalInvestment, investmentDuration, expectedReturn, inflationRate]);
 
     return (
-       <div className="container mx-auto">
-         <div className="lg:px-20 px-3 py-10">
+       <div className="container mx-auto main_section">
+         <div className="lg:px-20 px-3 ">
            <div className="mb-5 flex flex-col md:flex-row gap-5 justify-between">
-                                       <Breadcrumb>
-           
-                                           <BreadcrumbList>
-                                               <BreadcrumbItem>
-                                                   <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                                               </BreadcrumbItem>
-                                               <BreadcrumbSeparator />
-                                               <BreadcrumbItem>
-                                                   <BreadcrumbLink href="/tools/calculators">Tools</BreadcrumbLink>
-                                               </BreadcrumbItem>
-                                               <BreadcrumbSeparator />
-                                               <BreadcrumbItem>
-                                                   <BreadcrumbLink href="/tools/calculators">Calculators</BreadcrumbLink>
-                                               </BreadcrumbItem>
-                                               <BreadcrumbSeparator />
-                                               <BreadcrumbItem>
-                                                   <BreadcrumbPage>Vacation Plan Calculator</BreadcrumbPage>
-                                               </BreadcrumbItem>
-                                           </BreadcrumbList>
-                                       </Breadcrumb>
+           <h1 className="text-2xl md:text-3xl font-bold uppercase">
+                               Vacation Plan Calculator
+                           </h1>
                                        <div className="flex justify-between gap-4">
                                            <h2>Explore other calculators</h2>
                                            <select
@@ -105,11 +88,6 @@ export default function Page() {
            <div>
                {isAuthorised ? (
                    <div>
-                       <div className="mb-10">
-                           <h1 className="text-3xl md:text-4xl  font-bold text-gray-800">
-                               Vacation Plan Calculator
-                           </h1>
-                       </div>
                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mb-4">
                            <div className='col-span-1 border border-gray-200 rounded-2xl bg-white p-5'>
                                <div className="sip-calculator container mx-auto p-3 sticky top-0 z-10">

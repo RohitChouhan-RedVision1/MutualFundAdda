@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #013FCD;
+  --primary: #0133cd;
   --secondary: #f4f4f4;
   --tearnary: #1B49CF;
   --background: #ffffff;
   --foreground: #171717;
   --font-sans:  sans-serif; /* Updated font */
-  --rv-bg-primary:#013FCD;
+  --rv-bg-primary:#0133cd;
   --rv-white:#f4f4f4;
   --font-body:"Roboto"
 }
@@ -19,7 +19,7 @@ body {
 }
 p{
   font-family:var(--font-body) !important;
-  font-size: 18px;
+  font-size: 16px;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: var(--font-heading);
@@ -35,5 +35,5 @@ a,button{
 
 
 .main_section {
-  padding: 80px 0;
+  padding: 60px 0;
 }

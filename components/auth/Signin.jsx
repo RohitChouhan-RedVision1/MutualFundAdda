@@ -70,7 +70,7 @@ export default function Signin() {
                     ))}
                 </div>
                 <div className="mt-4 flex flex-col items-center">
-                    <h1 className="text-2xl xl:text-3xl font-extrabold">Sign In</h1>
+                    <h1 className="text-2xl md:text-3xl font-bold uppercase">Sign In</h1>
                     <div className="w-full flex-1 mt-4">
                         <div className="mx-auto max-w-xs">
                             <form onSubmit={handleSubmit}>

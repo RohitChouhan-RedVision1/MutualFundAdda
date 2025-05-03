@@ -73,10 +73,10 @@ const TestimonialsSlider = ({testimonial}) => {
           {testimonial.map((testimonial, index) => (
             <div key={index} className="px-4">
               <div className="">
-                <div className="relative text-5xl text-[#791c1c] top-[35px] left-10">
+                <div className="relative text-5xl text-[#791c1c] top-[40px] left-10">
                   <img src="/mf-adda/arrow-4.png" alt="arrow.png" />
                 </div>
-                <div className="bg-white rounded-lg shadow-md p-10 m-4 h-[350px] md:h-[300px]">
+                <div className="bg-white rounded-lg shadow-md p-10 m-4 h-[350px] md:h-[300px] mt-5">
                 {testimonial?.content && (
                     <div
                       dangerouslySetInnerHTML={createMarkup(testimonial?.content)}
@@ -104,9 +104,9 @@ const TestimonialsSlider = ({testimonial}) => {
                     “
                   </div>
                 </div>
-                <div className="relative text-5xl text-[#791c1c] bottom-[40px] right-30 ">
+                {/* <div className="relative text-5xl text-[#791c1c] bottom-[40px] right-30 ">
                   <img src="/mf-adda/arrow-1.png" alt="arrow.png" />
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

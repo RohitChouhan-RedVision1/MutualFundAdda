@@ -250,26 +250,8 @@ const fetchSiteData = async () => {
             <div className="page-header">
                <div className="">
                      <div className="container mx-auto px-4 md:px-20 pt-12 pb-2">
-                     <div className="  mb-8">
-                           <h1 className="text-4xl pb-5 font-bold text-black">Download Form</h1>
-                           <Breadcrumb>
-                             <BreadcrumbList className="text-black text-center items-center">
-                               <BreadcrumbItem>
-                                 <BreadcrumbLink className="text-center items-center text-black" href="/">
-                                   Home
-                                 </BreadcrumbLink>
-                               </BreadcrumbItem>
-                               <BreadcrumbSeparator />
-                               <BreadcrumbItem>
-                                 <BreadcrumbLink className="text-black" href="/tools">Tools</BreadcrumbLink>
-                               </BreadcrumbItem>
-                               <BreadcrumbSeparator />
-                               <BreadcrumbItem>
-                                 <BreadcrumbPage className="text-black" >Download Form</BreadcrumbPage>
-                               </BreadcrumbItem>
-                             </BreadcrumbList>
-                           </Breadcrumb>
-
+                     <div className="  mb-4">
+                           <h1 className="text-2xl md:text-3xl font-bold uppercase">Download Form</h1>
                          </div>
                      </div>
                      </div>

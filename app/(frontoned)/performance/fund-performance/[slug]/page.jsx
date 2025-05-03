@@ -94,31 +94,7 @@ export default function Page() {
   return (
     <div className="container mx-auto px-2 lg:px-20">
       <div className="py-10">
-        <div className="mb-5">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/tools">Tools</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/performance/fund-performance">
-                  Fund Performance
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              {performanceId && (
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{param.slug}</BreadcrumbPage>
-                </BreadcrumbItem>
-              )}
-            </BreadcrumbList>
-          </Breadcrumb>
-        </div>
+     
 
         <div>
           {loading ? (
@@ -126,12 +102,12 @@ export default function Page() {
           ) : (
             <div>
               <div className="mb-5">
-                <h1 className="text-4xl font-bold text-gray-900 mb-3">
+                <h1 className="text-2xl md:text-3xl font-bold uppercase">
                   {performanceData?.funddes}
                 </h1>
-                <h1 className="text-lg font-medium text-stone-700">
+                <h2 className="text-lg font-medium text-stone-700">
                   {performanceData?.schemeCategory}
-                </h1>
+                </h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

@@ -6,7 +6,7 @@ const SignIn = async () => {
   return (
     <>
       {/* source:https://codepen.io/owaiswiz/pen/jOPvEPB */}
-      <div className="min-h-[600px] bg-gray-100 text-gray-900 flex justify-center py-12">
+      <div className="min-h-[600px] bg-gray-100 text-gray-900 flex justify-center main_section">
         <div className="max-w-screen-xl m-0 bg-white shadow sm:rounded-lg flex justify-center flex-1">
           <Signin />
           <div className="flex-1 bg-indigo-100 text-center hidden lg:flex " style={{

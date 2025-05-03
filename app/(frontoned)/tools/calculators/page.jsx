@@ -20,30 +20,14 @@ export default function Page() {
       <section className="">
         <div className="page-header">
           <div className="">
-                               {/* <div className="container mx-auto px-4 md:px-20 pt-12 pb-2"> */}
-                               <div className="  mb-8">
-                                     <h1 className="text-4xl pb-5 font-bold text-black">Download Form</h1>
-                                     <Breadcrumb>
-                                       <BreadcrumbList className="text-black text-center items-center">
-                                         <BreadcrumbItem>
-                                           <BreadcrumbLink className="text-center items-center text-black" href="/">
-                                             Home
-                                           </BreadcrumbLink>
-                                         </BreadcrumbItem>
-                                         <BreadcrumbSeparator />
-                                         <BreadcrumbItem>
-                                           <BreadcrumbLink className="text-black" href="/tools">Tools</BreadcrumbLink>
-                                         </BreadcrumbItem>
-                                         <BreadcrumbSeparator />
-                                         <BreadcrumbItem>
-                                           <BreadcrumbPage className="text-black" >Calculators</BreadcrumbPage>
-                                         </BreadcrumbItem>
-                                       </BreadcrumbList>
-                                     </Breadcrumb>
-          
-                                   </div>
-                               {/* </div> */}
-                               </div>
+            {/* <div className="container mx-auto px-4 md:px-20 pt-12 pb-2"> */}
+            <div className="  mb-8">
+              <h1 className="text-2xl md:text-3xl font-bold uppercase">
+                Calculators
+              </h1>
+            </div>
+            {/* </div> */}
+          </div>
         </div>
         <div className=" mx-auto">
           <div className="flex  space-x-4 mb-14">
@@ -76,7 +60,7 @@ export default function Page() {
             <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
               {calculators.map((item, index) => (
                 <Link href={item?.route} key={index}>
-                  <div className="px-2 bg-[#1b5880] w-100 md:w-80 h-20  flex  gap-4 rounded items-center shadow-md group">
+                  <div className="px-2 bg-[#1b5880] w-100 md:w-64 h-20  flex  gap-4 rounded items-center shadow-md group">
                     <div>
                       <Image src={item?.image} alt="" width={20} height={20} />
                     </div>
@@ -93,7 +77,7 @@ export default function Page() {
             <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
               {performance.map((item, index) => (
                 <Link href={item.link} key={index}>
-                  <div className="px-2  bg-[#1b5880] w-100 md:w-80     h-20 flex gap-4 rounded items-center shadow-md group">
+                  <div className="px-2  bg-[#1b5880] w-100 md:w-64     h-20 flex gap-4 rounded items-center shadow-md group">
                     <div>
                       <Image src={item?.image} alt="" width={20} height={20} />
                     </div>

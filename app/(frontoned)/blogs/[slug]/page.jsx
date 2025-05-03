@@ -34,9 +34,9 @@ const SinglePostPage = async ({ params }) => {
         <div className="flex px-20 py-10 flex-col">
           <div className="text-left">
             <div className="mb-16">
-              <h1 className="text-5xl font-bold text-gray-800 mb-5">{post?.posttitle}</h1>
-              <span className="text-lg text-gray-800">Published </span>
-              <span className="text-lg text-purple-800">{formatDate(post?.createdAt)}</span>
+              <h1 className="text-2xl md:text-3xl font-bold uppercase">{post?.posttitle}</h1>
+              <span className="text-md text-gray-800">Published </span>
+              <span className="text-md text-purple-800">{formatDate(post?.createdAt)}</span>
             </div>
   
             {post?.image?.url && (

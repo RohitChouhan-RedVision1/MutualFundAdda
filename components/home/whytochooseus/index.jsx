@@ -16,7 +16,7 @@ const WhytoChooseus = ({sitedata}) => {
                   <span className={styles.investor_box}>
                     <div className={styles.icon}>
                       <img
-                        src="/mf-adda/onestop.png"
+                        src="/mf-adda/oneswh.png"
                         className="icon1"
                         alt="One stop"
                       />
@@ -32,7 +32,7 @@ const WhytoChooseus = ({sitedata}) => {
                   <span className={styles.investor_box}>
                     <div className={styles.icon}>
                       <img
-                        src="/mf-adda/end.png"
+                        src="/mf-adda/threesh.png"
                         className="icon1"
                         alt="End to End"
                       />
@@ -51,7 +51,7 @@ const WhytoChooseus = ({sitedata}) => {
                   >
                     <div className={styles.icon}>
                       <img
-                        src="/mf-adda/24h.png"
+                        src="/mf-adda/twosh.png"
                         className="icon1"
                         alt="24x7 Access"
                       />
@@ -74,7 +74,7 @@ const WhytoChooseus = ({sitedata}) => {
                     Why Choose Us?
                   </h2>
                 </div>
-                <p className="text-[16px] md:text-[18px] text-justify text-gray-600 mt-4 mb-5">
+                <p className=" text-justify text-gray-600 mt-4 mb-5">
                   Welcome to {sitedata.websiteName}, your trusted financial
                   companion in India. We understand that your financial journey
                   is more than just numbers; it's a story of dreams,
@@ -82,37 +82,37 @@ const WhytoChooseus = ({sitedata}) => {
                   deserves a secure and prosperous future:-
                 </p>
                 <ul className="flex flex-col gap-4">
-                  <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
+                  <li className="flex text-[16px]  items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
+                    <span className="text-[16px]  items-center text-gray-600">
                     <strong className="text-black">AMFI-Registered & Trusted:</strong> Backed by
                     expertise and ethical practices.
                     </span>
                   </li>
-                  <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
+                  <li className="flex text-[16px]  items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
+                    <span className="text-[16px]  items-center text-gray-600">
                     <strong className="text-black">One-Stop Solution:</strong> Investment, loan, and
                     insurance products under one roof.
                     </span>
                   </li>
-                  <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
+                  <li className="flex text-[16px]  items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
+                    <span className="text-[16px]  items-center text-gray-600">
                     <strong className="text-black">Technology-Driven:</strong> Smart, simple, and
                     transparent financial tracking.
                     </span>
                   </li>
-                  <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
+                  <li className="flex text-[16px]  items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
+                    <span className="text-[16px]  items-center text-gray-600">
                     <strong className="text-black">Personalized Solutions:</strong> Tailored to your
                     financial goals and risk appetite.
                     </span>
                   </li>
-                  <li className="flex text-[16px] md:text-[18px] items-center gap-2 text-gray-600 ">
+                  <li className="flex text-[16px]  items-center gap-2 text-gray-600 ">
                     <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-4xl" />
-                    <span className="text-[16px] md:text-[18px] items-center text-gray-600">
+                    <span className="text-[16px]  items-center text-gray-600">
                     <strong className="text-black">Continuous Monitoring:</strong> Regular updates and
                     tracking for optimal growth.
                     </span>
@@ -121,7 +121,7 @@ const WhytoChooseus = ({sitedata}) => {
                 </ul>
                 <p>
                   <Link href="/contactus" target="_blank">
-                    <Button className="mt-8 bg-[var(--primary)] hover:bg-[var(--primary)] text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+                    <Button className="mt-8 bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
                       View Services
                     </Button>
                   </Link>

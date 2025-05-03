@@ -10,10 +10,11 @@ export const metadata = {
 
 const AlternateInvestmentFunds = () => {
     return (
-        <div className="container mx-auto px-4 md:px-20 py-10">
+        <div className='main_section'>
+        <div className="container mx-auto px-4 md:px-20">
             {/* Heading and Subheading */}
-            <div className="text-center  pb-[50px]">
-                <h1 className="text-3xl font-bold text-gray-800">Tailored Alternate Investment Funds</h1>
+            <div className=" pb-[50px]">
+                <h1 className="text-2xl md:text-3xl font-bold uppercase">Alternate Investment Funds</h1>
                 <div  className="em_bar mx-auto">
               <div className="em_bar_bg" />
             </div>
@@ -89,14 +90,15 @@ const AlternateInvestmentFunds = () => {
             </div>
 
             {/* Conclusion and CTA */}
-            <div className="text-center mt-8">
+            <div className=" mt-8">
                 <p className="text-lg text-gray-700 mb-4">
                     Discover the power of Alternate Investment Funds and take advantage of innovative investment opportunities tailored to your financial aspirations. Invest in AIFs today to optimize your portfolio and achieve long-term financial success.
                 </p>
                 <Link href="/contactus" className='text-white'>
-                    <Button className=" bg-[var(--primary)] text-white rounded-2xl pl-8 pr-8 text-xl">Start Investing in AIFs Today!</Button>
+                    <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">Start Investing in AIFs Today!</Button>
                 </Link>
             </div>
+        </div>
         </div>
     );
 };

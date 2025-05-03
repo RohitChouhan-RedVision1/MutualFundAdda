@@ -52,11 +52,11 @@ function Features() {
                   : "/mf-adda/app-screen1.webp"
               }
               alt="App Screen"
-              className="w-[250px] lg:w-[250px] transition duration-300 mb-6 mx-auto"
+              className="w-[250px] lg:w-[220px] transition duration-300 mb-6 mx-auto"
             />
 
-            <div className="text-center mt-10">
-              <h4 className="font-semibold mb-4">Download our app now</h4>
+            <div className="text-center mt-0">
+              <h4 className="font-semibold text-2xl mb-4">Download our app now</h4>
               <div className="flex justify-center gap-4">
                 <a
                   href="https://play.google.com/store/search?q=wealth+elite&c=apps"
@@ -66,7 +66,7 @@ function Features() {
                   <img
                     src="/mf-adda/play-store.png"
                     alt="Play Store"
-                    className="w-[140px]"
+                    className="w-[180px]"
                   />
                 </a>
                 <a
@@ -77,7 +77,7 @@ function Features() {
                   <img
                     src="/mf-adda/app-store.png"
                     alt="App Store"
-                    className="w-[140px]"
+                    className="w-[180px]"
                   />
                 </a>
               </div>
@@ -91,7 +91,7 @@ function Features() {
                 key={idx}
                 onMouseEnter={() => setHoveredIndex(idx)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="flex flex-col md:flex-row items-start gap-4 min-h-[150px] bg-white p-6 rounded-2xl shadow-md border-l-4 border-[var(--primary)] hover:shadow-lg transition cursor-pointer"
+                className="flex flex-col md:flex-row items-start gap-4 min-h-[120px] bg-white px-6 py-3 rounded-2xl shadow-md border-l-4 border-[var(--primary)] hover:shadow-lg transition cursor-pointer"
               >
                 <img
                   src={feature.icon}
@@ -102,7 +102,7 @@ function Features() {
                   <h5 className="font-semibold text-xl  mb-1">
                     {feature.title}
                   </h5>
-                  <p className="text-[16px] md:text-[18px] text-gray-600 text-justify">{feature.description}</p>
+                  <p className="text-[16px] text-gray-600 text-justify">{feature.description}</p>
                 </div>
               </div>
             ))}

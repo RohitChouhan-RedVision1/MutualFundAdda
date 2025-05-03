@@ -63,28 +63,14 @@ export default function Page() {
     };
 
     return (
-        <div  className="container mx-auto py-10">
+        <div  className="container mx-auto main_section">
         <div className="lg:px-20 px-3 ">
             <div className="mb-5 flex justify-between">
-                <Breadcrumb>
-                    <BreadcrumbList>
-                        <BreadcrumbItem>
-                            <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <BreadcrumbLink href="/tools">Tools</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <BreadcrumbLink href="/tools/calculators">Calculators</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <BreadcrumbPage>House Planning Calculator</BreadcrumbPage>
-                        </BreadcrumbItem>
-                    </BreadcrumbList>
-                </Breadcrumb>
+            <div className="">
+                        <h1 className="text-2xl md:text-3xl font-bold uppercase">
+                            House Planning Calculator
+                        </h1>
+                    </div>
                 <div className="flex justify-between gap-4">
                     <h2>Explore other calculators</h2>
                     <select
@@ -105,11 +91,7 @@ export default function Page() {
             </div>
             <div>
                 <div>
-                    <div className="mb-10">
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                            House Planning Calculator
-                        </h1>
-                    </div>
+                    
                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mb-4">
                         <div className='col-span-1 border border-gray-200 rounded-2xl bg-white p-5'>
                             <div className="sip-calculator container mx-auto p-3 sticky top-0 z-10">

@@ -47,11 +47,11 @@ const ServiceSection = ({ services }) => {
             <h2 className="text-xl md:text-2xl font-bold text-[var(--primary)] mt-4">
               We help to make your Wealth
             </h2>
-            <p className="text-[16px] md:text-[18px] text-justify text-gray-600 mt-4">
+            <p className="text-[16px] text-justify text-gray-600 mt-4">
               We Believe in Your Financial Goals - Bringing Dreams to Life, Every Step of the Way.
             </p>
             <Link href="/login" target="_blank">
-              <Button className="mt-8 bg-[var(--primary)]  text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+              <Button className="mt-8 bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
                 Invest Now
               </Button>
             </Link>
@@ -86,13 +86,13 @@ const ServiceSection = ({ services }) => {
                           <Image
                             src={`/mf-adda/${card.imageSrc}`}
                             alt={card.name}
-                            width={80}
-                            height={50}
+                            width={60}
+                            height={60}
                             className="object-contain"
                           />
                         </div>
                         <h5 className="text-xl font-semibold  mb-4">{card.name}</h5>
-                        <p className="text-[16px] md:text-[18px] text-justify text-gray-600 line-clamp-3 mb-4">{card.description}</p>
+                        <p className=" text-justify text-gray-600 line-clamp-3 mb-4">{card.description}</p>
                       </div>
                       <p className="text-[var(--primary)] font-medium mt-auto">Explore More</p>
                     </div>

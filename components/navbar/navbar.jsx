@@ -97,7 +97,7 @@ const Navbar = ({ servicedata }) => {
             {/* Portfolio Login Button (Hidden on Mobile) */}
             <div className="hidden md:block text-[18px]">
               <Link href="/login">
-                <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition cursor-pointer hover:border-white">
+                <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
                   Login
                 </button>
               </Link>

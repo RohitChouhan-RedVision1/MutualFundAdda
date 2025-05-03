@@ -30,24 +30,10 @@ const UsefulLinksPage = () => {
     <div>
       <div className="flex overflow-hidden ">
         <div className="container mx-auto page-header-box py-10 px-4 md:px-20">
-          <h1 className="text-anime-style-2 text-4xl mb-4" data-cursor="-opaque">
+          <h1 className="text-2xl md:text-3xl font-bold uppercase" data-cursor="-opaque">
             Useful Links
           </h1>
-          <Breadcrumb>
-            <BreadcrumbList className="text-white">
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/tools">Tools</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Links</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
+         
         </div>
       </div>
       <div className="container mx-auto md:px-20 py-10 px-4">

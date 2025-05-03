@@ -11,10 +11,11 @@ export const metadata = {
 
 const LoanAgainstSecurities = () => {
   return (
-    <div className="container mx-auto px-4 md:px-20 py-10">
+    <div className="main_section">
+    <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className="text-center pb-[50px]">
-        <h1 className="text-3xl font-bold text-gray-800">
+      <div className=" pb-[50px]">
+        <h1 className="text-2xl md:text-3xl font-bold uppercase">
           Loan Against Securities (LAS)
         </h1>
         <div className="em_bar mx-auto">
@@ -88,18 +89,19 @@ const LoanAgainstSecurities = () => {
       </div>
 
       {/* Conclusion and CTA */}
-      <div className="text-center mt-8">
+      <div className=" mt-8">
         <p className="text-lg text-gray-700 mb-4">
           Fulfill your short-term financial needs by unlocking the potential of
           your investments with Loan Against Securities. Apply now and get
           access to funds without disturbing your portfolio.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] text-white rounded-2xl pl-8 pr-8 text-xl">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
             Apply for LAS Now!
           </Button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

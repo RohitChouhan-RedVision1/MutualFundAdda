@@ -11,10 +11,11 @@ export const metadata = {
 
 const PortfolioManagementServices = () => {
   return (
-    <div className="container mx-auto px-4 md:px-20 py-10">
+    <div className="main_section">
+    <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className="text-center  pb-[50px]">
-        <h1 className="text-3xl font-bold text-gray-800">
+      <div className=" pb-[50px]">
+        <h1 className="text-2xl md:text-3xl font-bold uppercase">
           Portfolio Management Services
         </h1>
         <div  className="em_bar mx-auto">
@@ -141,7 +142,7 @@ const PortfolioManagementServices = () => {
       </div>
 
       {/* Conclusion and CTA */}
-      <div className="text-center mt-8">
+      <div className=" mt-8">
         <p className="text-lg text-gray-700 mb-4">
           Your financial success is our priority. Choose our Portfolio
           Management Services to achieve your wealth objectives with a
@@ -149,11 +150,12 @@ const PortfolioManagementServices = () => {
           the most of your investments and reach your financial milestones.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className=" bg-[var(--primary)] text-white rounded-2xl pl-8 pr-8 text-xl">
+          <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
             Start Investing in PMS Today!
           </Button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

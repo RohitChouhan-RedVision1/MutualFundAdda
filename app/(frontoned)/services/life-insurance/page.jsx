@@ -10,10 +10,11 @@ export const metadata = {
 
 const LifeInsurance = () => {
   return (
-    <div className="container mx-auto px-4 md:px-20 py-10">
+    <div className='main_section'>
+    <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className="text-center pb-[50px]">
-        <h1 className="text-3xl font-bold text-gray-800">Life Insurance</h1>
+      <div className=" pb-[50px]">
+        <h1 className="text-2xl md:text-3xl font-bold uppercase">Life Insurance</h1>
         <div className="em_bar mx-auto">
           <div className="em_bar_bg" />
         </div>
@@ -78,16 +79,17 @@ const LifeInsurance = () => {
       </div>
 
       {/* Conclusion and CTA */}
-      <div className="text-center mt-8">
+      <div className=" mt-8">
         <p className="text-lg text-gray-700 mb-4">
           Safeguard your family's future and build wealth with a suitable life insurance plan. Let us help you choose the right policy for your needs and goals.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] text-white rounded-2xl pl-8 pr-8 text-xl">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
             Protect Your Future Now!
           </Button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

@@ -286,10 +286,10 @@ export default function Page() {
     };
 
     return (
-        <div className="container mx-auto">
-            <div className=" md:px-20 px-3 py-10">
+        <div className="container mx-auto main_section">
+            <div className=" md:px-20 px-3 ">
             <Toaster />
-            <div className="mb-5">
+            {/* <div className="mb-5">
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>
@@ -305,11 +305,11 @@ export default function Page() {
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
-            </div>
+            </div> */}
             <div>
                 <div>
                     <div className="mb-10">
-                        <h1 className="text-4xl font-bold text-gray-800">
+                        <h1 className="text-2xl md:text-3xl font-bold uppercase">
                             Scheme Performance
                         </h1>
                     </div>

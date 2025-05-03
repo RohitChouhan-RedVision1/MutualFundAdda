@@ -6,7 +6,7 @@ import styles from "./toolssection.module.css";
 const tools = [
   {
     href: "/tools/calculators",
-    img: "/mf-adda/calculator.png",
+    img: "/mf-adda/calculator.webp",
     label: "Financial Calculator",
 
 
@@ -52,7 +52,7 @@ const ToolsSection = () => {
   {tools.map(({ href, img, label, target }, idx) => (
     <div
       key={idx}
-      className={`bg-white text-center rounded-xl  shadow-md hover:shadow-xl transition-transform duration-500 transform hover:-translate-y-1 cursor-pointer ${styles.toolCard}`}
+      className={`bg-white text-center rounded-xl  shadow-md hover:shadow-xl py-5 transition-transform duration-500 transform hover:-translate-y-1 cursor-pointer ${styles.toolCard}`}
     >
       <Link
         href={href}
