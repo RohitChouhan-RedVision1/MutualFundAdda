@@ -7,7 +7,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-import { getSiteData } from "@/lib/functions";
+// import { getSiteData } from "@/lib/functions";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +20,7 @@ export const metadata = {
 };
 
 const AboutUsPage = async () => {
-  const sitedata = await getSiteData();
+  // const sitedata = await getSiteData();
 
   return (
     <div>

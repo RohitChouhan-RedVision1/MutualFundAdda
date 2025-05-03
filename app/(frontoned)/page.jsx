@@ -11,18 +11,18 @@ import ToolsSection from "@/components/home/toolssection/toolssection";
 import VideoSlider from "@/components/home/Vidios/vidios";
 import WhytoChooseus from "@/components/home/whytochooseus";
 import SocialMediaSidebar from "@/components/socialMedia";
-import { getServiceData, getSiteData } from "@/lib/functions";
+// import { getServiceData, getSiteData } from "@/lib/functions";
 
 export default async function Page() {
-  const services= await getServiceData()
-  const sitedata = await getSiteData();
+  // const services= await getServiceData()
+  // const sitedata = await getSiteData();
   return (
     <div className="">
         <main className="overflow-x-hidden">
         <HeroSection/>
-        <WhytoChooseus sitedata={sitedata}/>
+        {/* <WhytoChooseus sitedata={sitedata}/> */}
         <Features />
-        <ServiceSection services={services}/>
+        {/* <ServiceSection services={services}/> */}
         <ToolsSection />
         <Calculator/>
         <Howwework/>
