@@ -246,10 +246,10 @@ const fetchSiteData = async () => {
     const data = selectedCategory === 'sip' ? forms.sipData : selectedCategory === 'mf' ? forms?.mfData : selectedCategory === 'stp' ? forms?.stpData : selectedCategory === 'sai' ? forms?.saiData : selectedCategory === 'sid' ? forms?.sidData : selectedCategory === 'kim' ? forms?.kimData : selectedCategory === 'other' ? forms?.otherData : forms?.swpData;
 
     return (
-        <section>
+        <section className="main_section">
             <div className="page-header">
                <div className="">
-                     <div className="container mx-auto px-4 md:px-20 pt-12 pb-2">
+                     <div className="container mx-auto px-4 md:px-20 pb-2">
                      <div className="  mb-4">
                            <h1 className="text-2xl md:text-3xl font-bold uppercase">Download Form</h1>
                          </div>

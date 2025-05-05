@@ -59,7 +59,7 @@ export default function RetirementCalculator() {
     };
 
     return (
-        <div  className="container mx-auto py-10">
+        <div  className="container mx-auto main_section">
         <div className="lg:px-20 px-10">
             <div className="mb-5 flex justify-between">
                 <Breadcrumb>

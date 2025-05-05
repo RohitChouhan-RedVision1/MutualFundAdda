@@ -13,16 +13,16 @@ const AlternateInvestmentFunds = () => {
         <div className='main_section'>
         <div className="container mx-auto px-4 md:px-20">
             {/* Heading and Subheading */}
-            <div className=" pb-[50px]">
+            <div className=" pb-[20px]">
                 <h1 className="text-2xl md:text-3xl font-bold uppercase">Alternate Investment Funds</h1>
-                <div  className="em_bar mx-auto">
+                {/* <div  className="em_bar mx-auto">
               <div className="em_bar_bg" />
-            </div>
-                <p className="text-xl text-gray-600 mt-2">Grow and Protect Your Wealth, Your Way</p>
+            </div> */}
+                {/* <p className="text-xl text-gray-600 mt-2">Grow and Protect Your Wealth, Your Way</p> */}
             </div>
 
              {/* Introduction with Image */}
-                        <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+                        <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
                             <div className="lg:w-1/2">
                             <p className="text-lg text-gray-700 text-justify items-center">
                     Unlock tailored Alternate Investment Funds (AIFs) to grow and safeguard your wealth according to your unique financial objectives. AIFs provide an alternative investment route beyond traditional asset classes, offering exposure to diverse strategies such as private equity, venture capital, hedge funds, and more.
@@ -37,7 +37,7 @@ const AlternateInvestmentFunds = () => {
                         </div>
             
                         {/* Product Description with Image
-                        <div className="mb-8 flex flex-col md:flex-row items-center md:items-start mt-2.5">
+                        <div className="mb-5 flex flex-col md:flex-row items-center md:items-start mt-2.5">
                             <div className="md:w-1/2 md:pr-8 flex justify-center mb-6 md:mb-0">
                                 <Image src="/Services/aif-2.jpg" alt="Fund Management" width={400} height={300} className="rounded-lg shadow-lg" />
                             </div>
@@ -49,7 +49,7 @@ const AlternateInvestmentFunds = () => {
            
 
             {/* Categories of AIFs */}
-            <div className="mb-8">
+            <div className="mb-5">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">Categories of Alternate Investment Funds</h2>
                 <ul className="list-disc pl-5 space-y-4">
                     <li>
@@ -68,7 +68,7 @@ const AlternateInvestmentFunds = () => {
             </div>
 
             {/* Features of AIFs */}
-            <div className="mb-8">
+            <div className="mb-5">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">Features of Alternate Investment Funds</h2>
                 <ul className="list-disc pl-5 space-y-4">
                     <li>
@@ -95,7 +95,7 @@ const AlternateInvestmentFunds = () => {
                     Discover the power of Alternate Investment Funds and take advantage of innovative investment opportunities tailored to your financial aspirations. Invest in AIFs today to optimize your portfolio and achieve long-term financial success.
                 </p>
                 <Link href="/contactus" className='text-white'>
-                    <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">Start Investing in AIFs Today!</Button>
+                    <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">Start Investing in AIFs Today!</Button>
                 </Link>
             </div>
         </div>

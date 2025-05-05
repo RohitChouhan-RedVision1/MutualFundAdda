@@ -27,16 +27,16 @@ const UsefulLinksPage = () => {
     fetchLinks();
   }, []);
   return (
-    <div>
+    <div className="main_section">
       <div className="flex overflow-hidden ">
-        <div className="container mx-auto page-header-box py-10 px-4 md:px-20">
+        <div className="container mx-auto page-header-box px-4 md:px-20">
           <h1 className="text-2xl md:text-3xl font-bold uppercase" data-cursor="-opaque">
             Useful Links
           </h1>
          
         </div>
       </div>
-      <div className="container mx-auto md:px-20 py-10 px-4">
+      <div className="container mx-auto md:px-20 px-4 pt-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {usefulLink.map((link, index) => (
             <Link href={link.link} key={index} legacyBehavior>

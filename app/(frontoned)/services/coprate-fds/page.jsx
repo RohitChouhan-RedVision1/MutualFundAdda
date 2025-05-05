@@ -11,23 +11,23 @@ export const metadata = {
 
 const CorporateFDs = () => {
   return (
-    <div>
-    <div className="container mx-auto px-4 md:px-20 py-10">
+    <div className="main_section">
+    <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
       <div className="">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">
           Corporate Fixed Deposits (FDs)
         </h1>
-        <div className="em_bar mx-auto">
+        {/* <div className="em_bar mx-auto">
           <div className="em_bar_bg" />
         </div>
         <p className="text-xl text-gray-600 mt-2">
           Attractive Interest Rates with Stable Returns
-        </p>
+        </p> */}
       </div>
 
       {/* Introduction with Image */}
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Corporate Fixed Deposits (FDs) are term deposit instruments offered
@@ -51,7 +51,7 @@ const CorporateFDs = () => {
       </div>
 
       {/* Benefits of Corporate FDs */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Benefits of Investing in Corporate Fixed Deposits (FDs)
         </h2>
@@ -97,7 +97,7 @@ const CorporateFDs = () => {
           Corporate Fixed Deposits. Start investing today and enjoy stable returns.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
             Start Your Corporate FD Investment Now!
           </Button>
         </Link>

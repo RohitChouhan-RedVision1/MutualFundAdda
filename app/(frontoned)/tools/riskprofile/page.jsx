@@ -290,7 +290,8 @@ Here are the answers you provided:
     };
 
     return (
-        <div className="max-w-3xl mx-auto my-40 p-6 bg-white shadow-lg rounded-lg">
+        <div className="main_section">
+            <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
             <Toaster />
             {isModalOpen && (
                 <div className="fixed  inset-0 bg-[#0e314da3] bg-opacity-60 z-100 flex justify-center ">
@@ -353,12 +354,13 @@ Here are the answers you provided:
                     </div>
                     <Button
                         onClick={() => handleNextClick(questions[currentQuestionIndex]?.question)}
-                        className="bg-[var(--primary)] text-white px-4 py-2 rounded-lg "
+                        className="text-black border px-4 py-2 rounded-lg hover:bg-[var(--rv-bg-primary)] hover:text-white w-1/3 "
                     >
                         Next
                     </Button>
                 </div>
             )}
+        </div>
         </div>
     );
 };

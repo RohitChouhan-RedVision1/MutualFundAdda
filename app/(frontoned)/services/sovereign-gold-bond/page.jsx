@@ -13,16 +13,16 @@ const SovereignGoldBond = () => {
     <div className='main_section'>
     <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className="pb-[50px]">
+      <div className="pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">Sovereign Gold Bond (SGB)</h1>
-        <div className="em_bar mx-auto">
+        {/* <div className="em_bar mx-auto">
           <div className="em_bar_bg" />
         </div>
-        <p className="text-xl text-gray-600 mt-2">Smart Way to Invest in Gold</p>
+        <p className="text-xl text-gray-600 mt-2">Smart Way to Invest in Gold</p> */}
       </div>
 
       {/* Introduction with Image */}
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Sovereign Gold Bonds (SGBs) are government-backed securities denominated in grams of gold. They offer an attractive alternative to physical gold investment, combining the benefits of gold price appreciation with a fixed annual interest. SGBs are a secure, cost-effective, and tax-efficient way to invest in gold without the hassle of storage or purity concerns.
@@ -40,7 +40,7 @@ const SovereignGoldBond = () => {
       </div>
 
       {/* Benefits of SGBs */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Why Invest in Sovereign Gold Bonds?</h2>
         <ul className="list-disc pl-5 space-y-4">
           <li><p className="text-gray-700"><strong>Assured Interest:</strong> Earn a fixed 2.5% annual interest on the initial investment in addition to potential gold price appreciation.</p></li>
@@ -52,7 +52,7 @@ const SovereignGoldBond = () => {
       </div>
 
       {/* Key Features */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Key Features of SGB</h2>
         <ul className="list-disc pl-5 space-y-4">
           <li><p className="text-gray-700"><strong>Denomination:</strong> Issued in multiples of 1 gram of gold.</p></li>
@@ -69,7 +69,7 @@ const SovereignGoldBond = () => {
           Take advantage of a secure and rewarding way to invest in gold. Start your Sovereign Gold Bond journey today and diversify your portfolio smartly.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
             Invest in SGB Now
           </Button>
         </Link>

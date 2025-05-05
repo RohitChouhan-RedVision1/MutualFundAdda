@@ -59,7 +59,7 @@ export const HeroSection = () => {
               </motion.span>
 
               <motion.div variants={fadeInDown}>
-                <Link href="/contactus" target="_blank">
+                <Link href="/tools/financialhealth" target="_blank">
                   <Button
                     className="mt-8 bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow"
                   >

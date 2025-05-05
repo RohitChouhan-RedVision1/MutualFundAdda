@@ -10,7 +10,7 @@ const Blogs = async () => {
     const data =await getBlogs();
     return (
        <div className='container mx-auto main_section'>
-         <div className='px-20'>
+         <div className='px-2 md:px-20'>
          <h2 className="text-2xl md:text-3xl font-bold uppercase">Blogs</h2>
 
             <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>

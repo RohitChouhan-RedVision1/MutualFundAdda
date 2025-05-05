@@ -14,20 +14,14 @@ const LoanAgainstSecurities = () => {
     <div className="main_section">
     <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className=" pb-[50px]">
+      <div className=" pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">
           Loan Against Securities (LAS)
         </h1>
-        <div className="em_bar mx-auto">
-          <div className="em_bar_bg" />
-        </div>
-        <p className="text-xl text-gray-600 mt-2">
-          Unlock the Value of Your Investments Without Liquidating
-        </p>
       </div>
 
       {/* Introduction with Image */}
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Loan Against Securities (LAS) allows you to borrow funds by pledging
@@ -50,7 +44,7 @@ const LoanAgainstSecurities = () => {
       </div>
 
       {/* Key Features */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Key Features of LAS
         </h2>
@@ -96,7 +90,7 @@ const LoanAgainstSecurities = () => {
           access to funds without disturbing your portfolio.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
             Apply for LAS Now!
           </Button>
         </Link>

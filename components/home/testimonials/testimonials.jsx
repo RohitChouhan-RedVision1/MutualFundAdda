@@ -1,11 +1,11 @@
 // components/TestimonialsSlider.jsx
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const testimonials = [
   {
@@ -24,6 +24,7 @@ const testimonials = [
 ];
 
 const TestimonialsSlider = ({testimonial}) => {
+  const [selectedTestimonial, setSelectedTestimonial] = useState(null);
   function createMarkup(item) {
     return { __html: item };
   }
@@ -76,13 +77,17 @@ const TestimonialsSlider = ({testimonial}) => {
                 <div className="relative text-5xl text-[#791c1c] top-[40px] left-10">
                   <img src="/mf-adda/arrow-4.png" alt="arrow.png" />
                 </div>
-                <div className="bg-white rounded-lg shadow-md p-10 m-4 h-[350px] md:h-[300px] mt-5">
-                {testimonial?.content && (
-                    <div
-                      dangerouslySetInnerHTML={createMarkup(testimonial?.content)}
-                      className="italic [display:-webkit-box] text-gray-600 text-sm  [-webkit-line-clamp:5] [-webkit-box-orient:vertical] overflow-hidden mb-4"
-                    />
-                  )}
+                <div className="bg-white rounded-lg shadow-md p-10 m-4  mt-5">
+                <div
+                    dangerouslySetInnerHTML={createMarkup(testimonial?.content)}
+                    className="italic text-gray-600 text-sm line-clamp-2 overflow-hidden mb-1"
+                  />
+                  <button
+                    onClick={() => setSelectedTestimonial(testimonial)}
+                    className="text-blue-600 text-sm underline mb-1"
+                  >
+                    Read more
+                  </button>
                   <div className="flex  items-center gap-3 mt-4">
                     <Image
                       src={testimonial?.image?.url}
@@ -112,6 +117,36 @@ const TestimonialsSlider = ({testimonial}) => {
           ))}
         </Slider>
       </div>
+
+      {selectedTestimonial && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-lg max-w-xl w-full p-6 relative">
+            <button
+              onClick={() => setSelectedTestimonial(null)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black"
+            >
+              <X size={24} />
+            </button>
+            <div
+              dangerouslySetInnerHTML={createMarkup(selectedTestimonial.content)}
+              className="text-gray-800 text-base mb-6"
+            />
+            <div className="flex items-center gap-3">
+              <Image
+                src={selectedTestimonial?.image?.url}
+                alt={selectedTestimonial?.author}
+                width={60}
+                height={60}
+                className="rounded-full"
+              />
+              <div>
+                <h4 className="text-lg font-semibold">{selectedTestimonial?.author}</h4>
+                <p className="text-sm text-gray-600">{selectedTestimonial?.designation}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

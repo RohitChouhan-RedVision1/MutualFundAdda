@@ -73,8 +73,8 @@ export default function Page() {
   };
 
   return (
-    <div className="container mx-auto">
-      <div className="lg:px-20 px-3 py-10">
+    <div className="container mx-auto main_section">
+      <div className="lg:px-20 px-3">
         <div className="mb-5 flex flex-col md:flex-row gap-5 justify-between">
           <Breadcrumb>
             <BreadcrumbList>

@@ -160,7 +160,7 @@ const Navbar = ({ servicedata }) => {
                         {servicedata.map((service, index) => (
                           <Link
                             key={index}
-                            href={`services/${service.link}`}
+                            href={`/services/${service.link}`}
                             className="block text-white  mt-2 text-left"
                             onClick={() => {
                               setIsMobileMenuOpen(false);
@@ -176,7 +176,15 @@ const Navbar = ({ servicedata }) => {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href="/tools"
+                  className="block text-white font-semibold hover:text-[var(--primary)] cursor-pointer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tools
+                </Link>
+
+                <Link
+                  href="/contactus"
                   className="block text-white font-semibold hover:text-[var(--primary)] cursor-pointer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

@@ -84,7 +84,8 @@ export default function PayPremium() {
     // Determine which data set to use based on selected category
     const data = selectedCategory === 'li' ? fiimagedata : selectedCategory === 'hi' ? hiimagedata : giimagedata;
     return (
-        <section className="container mx-auto main_section">
+        <div className="main_section">
+        <section className="container mx-auto ">
             <div className="page-header">
                 <div className="md:px-20 px-4  ">
                     <div className="items-center container mx-auto">
@@ -96,7 +97,7 @@ export default function PayPremium() {
                 </div>
             </div>
             <div className='md:px-20 px-4 '>
-                <div className='px-5 py-3 bg-[var(--dark-color)] text-white flex items-center gap-x-10 rounded'>
+                <div className='px-5 bg-[var(--dark-color)] text-white flex items-center gap-x-10 rounded'>
                     <div className='cursor-pointer' onClick={() => handleCategoryClick('gi')}>
                         <p className={`uppercase font-semibold ${selectedCategory === 'gi' ? 'text-gray-300' : ''}`}>General Insurance</p>
                     </div>
@@ -118,5 +119,6 @@ export default function PayPremium() {
                 </div>
             </div>
         </section>
+        </div>
     );
 }

@@ -63,7 +63,7 @@ export default function MarriagePlanningCalculator() {
     };
 
     return (
-        <div  className="container mx-auto py-10">
+        <div  className="container mx-auto main_section">
         <div className="lg:px-20 md:px-20 px-3 ">
             <div className="mb-5 flex flex-col md:flex-row gap-5 justify-between">
             <h1 className="text-2xl md:text-3xl font-bold uppercase">

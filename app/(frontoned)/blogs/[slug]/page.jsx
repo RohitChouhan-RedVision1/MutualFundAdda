@@ -31,7 +31,7 @@ const SinglePostPage = async ({ params }) => {
   
     return (
       <div className="container mx-auto">
-        <div className="flex px-20 py-10 flex-col">
+        <div className="flex px-2 md:px-20 py-10 flex-col">
           <div className="text-left">
             <div className="mb-16">
               <h1 className="text-2xl md:text-3xl font-bold uppercase">{post?.posttitle}</h1>
@@ -56,7 +56,7 @@ const SinglePostPage = async ({ params }) => {
   
           <div>
             <h1 className="font-bold text-xl mb-4">Recent Posts</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {recentPost?.slice(0, 6).map((item, index) => (
                 <BlogCards key={index} item={item} />
               ))}

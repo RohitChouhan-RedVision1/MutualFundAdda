@@ -66,7 +66,7 @@ export default function Signin() {
                         <div className="mx-auto max-w-xs">
                             <form onSubmit={handleSubmit}>
                                 <input
-                                    className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                                    className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
                                     type="email"
                                     placeholder="Email"
                                     value={provider.userName}
@@ -76,7 +76,7 @@ export default function Signin() {
                                 />
                                 {otpField && (
                                     <input
-                                        className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-6"
+                                        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 mt-6"
                                         type="text"
                                         placeholder="OTP"
                                         value={provider.otp}
@@ -85,7 +85,7 @@ export default function Signin() {
                                         }
                                     />
                                 )}
-                                <button className="mt-5 tracking-wide font-semibold primarybgcolor bg-gray-700 text-gray-100 w-full py-4 rounded-lg flex items-center justify-center focus:shadow-outline focus:outline-none">
+                                <button className="mt-5 tracking-wide bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow w-full flex items-center justify-center">
                                     <svg
                                         className="w-6 h-6 -ml-2"
                                         fill="none"

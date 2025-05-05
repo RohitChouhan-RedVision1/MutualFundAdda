@@ -36,7 +36,7 @@ const BlogSlider = ({ blogs }) => {
           {blogs.map((blog, index) => (
             <div key={index} className="px-3 h-full">
               <Link href={`/blogs/${blog.slug}`} passHref>
-                <div className="bg-white shadow-md rounded-md overflow-hidden min-h-[450px] h-full flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-white shadow-md rounded-md overflow-hidden min-h-[380px] h-full flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300 mb-[10px]">
                   <Image
                     src={blog.image.url}
                     alt={blog.posttitle}
@@ -44,10 +44,10 @@ const BlogSlider = ({ blogs }) => {
                     height={300}
                     className="w-full h-52 object-cover"
                   />
-                  <div className="p-4 flex flex-col flex-grow justify-between">
+                  <div className="p-4 flex flex-col justify-between">
                     <div>
                       <h3 className="text-xl font-semibold mb-2 line-clamp-2">{blog.posttitle}</h3>
-                      <p className="text-gray-600 text-[16px] mb-4 line-clamp-2">{blog.description}</p>
+                      <p className="text-gray-600 text-[16px]  line-clamp-2">{blog.description}</p>
                     </div>
                     <span className="text-[var(--primary)] text-md font-semibold mt-auto">Read More</span>
                   </div>

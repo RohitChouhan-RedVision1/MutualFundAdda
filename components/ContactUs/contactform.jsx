@@ -98,7 +98,7 @@ export default function ContactForm({ sitedata }) {
           name="username"
           type="text"
           placeholder="Name"
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
           value={formData.username}
           onChange={handleChange}
           required
@@ -109,7 +109,7 @@ export default function ContactForm({ sitedata }) {
           name="mobile"
           type="tel"
           placeholder="Mobile"
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
           value={formData.mobile}
           onChange={handleChange}
           required
@@ -120,7 +120,7 @@ export default function ContactForm({ sitedata }) {
           name="email"
           type="email"
           placeholder="Email"
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
           value={formData.email}
           onChange={handleChange}
           required
@@ -130,7 +130,7 @@ export default function ContactForm({ sitedata }) {
         <textarea
           name="message"
           placeholder="Message"
-          className="w-full p-2 border border-gray-300 rounded h-32"
+          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 h-32"
           value={formData.message}
           onChange={handleChange}
           required
@@ -138,21 +138,21 @@ export default function ContactForm({ sitedata }) {
       </div>
 
       <div className="flex  items-center gap-2">
-        <div className="bg-[#f8d7c3] text-[#a30a00] px-2 py-1 rounded font-mono tracking-widest">
+        <div className="bg-[#f8d7c3] text-[#a30a00] px-8 py-4 rounded font-mono tracking-widest">
           {captcha}
         </div>
         <input
           name="captcha"
           type="text"
           placeholder="Enter Captcha"
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
           value={userCaptcha}
           onChange={(e) => setUserCaptcha(e.target.value)}
           required
         />
         <button
           type="button"
-          className="bg-gray-800 text-white px-3 py-2 rounded text-sm"
+          className="bg-gray-800 text-white px-8 py-4  text-md transform transition-transform duration-300 hover:scale-105 font-semibold rounded-md shadow"
           onClick={refreshCaptcha}
         >
           Refresh

@@ -62,6 +62,7 @@ function Features() {
                   href="https://play.google.com/store/search?q=wealth+elite&c=apps"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="transform transition-transform duration-300 hover:scale-105"
                 >
                   <img
                     src="/mf-adda/play-store.png"
@@ -73,6 +74,7 @@ function Features() {
                   href="https://apps.apple.com/us/app/wealth-elite/id1518518606"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="transform transition-transform duration-300 hover:scale-105"
                 >
                   <img
                     src="/mf-adda/app-store.png"

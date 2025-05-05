@@ -205,12 +205,12 @@ export default function Calculator() {
             <div className="w-full md:w-1/3">
               {/* Invested Amount Section */}
               <div className="border-2 border-solid border-[var(--primary)] rounded-[10px] p-4 py-6">
-                <div className="block justify-between w-full">
+                <div className="block w-full">
                   <label className="text-[var(--primary)] text-xl font-bold">
                     Invested Amount (₹)
                   </label>
-                  <label className="text-[var(--primary)] text-xl font-bold">
-                  ₹{result?.totalInvestment?.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  <label className="text-[var(--primary)] text-xl font-bold pl-2">
+                  {result?.totalInvestment?.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </label>
                 </div>
               </div>
@@ -223,8 +223,8 @@ export default function Calculator() {
                   <label className="text-[var(--primary)] text-xl font-bold">
                     Estimated Return (₹)
                   </label>
-                  <label className="text-[var(--primary)] text-xl font-bold">
-                    ₹{(result?.futureValue-result?.totalInvestment)?.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  <label className="text-[var(--primary)] text-xl font-bold pl-2">
+                    {(result?.futureValue-result?.totalInvestment)?.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </label>
                 </div>
               </div>
@@ -236,8 +236,8 @@ export default function Calculator() {
                   <label className="text-[var(--primary)] text-xl font-bold">
                     Final Amount (₹)
                   </label>
-                  <label className="text-[var(--primary)] text-xl font-bold">
-                    ₹{(result?.futureValue)?.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  <label className="text-[var(--primary)] text-xl font-bold pl-2">
+                    {(result?.futureValue)?.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </label>
                 </div>
               </div>

@@ -24,18 +24,18 @@ const AboutUsPage = async () => {
 
   return (
     <div>
-      <div>
+      <div className="main_section">
         <div className="">
-          <div className="container mx-auto px-4 md:px-20 pt-12 pb-2 ">
-            <div className="  mb-8">
+          <div className="container mx-auto px-4 md:px-20 pb-2 ">
+            <div className="mb-5">
               <h1 className="text-2xl md:text-3xl font-bold uppercase">About Us</h1>
-              <p className="text-xl text-black mt-2">
+              {/* <p className="text-xl text-black mt-2">
                 Your Trusted Financial Partner
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4 md:px-20 py-10">
+        <div className="container mx-auto px-4 md:px-20">
           {/* Heading and Subheading */}
 
           {/* {sitedata.websiteName} - Company Overview */}
@@ -72,27 +72,27 @@ const AboutUsPage = async () => {
             </h3>
             <ul className="pl-6 space-y-3 text-[16px] text-gray-700">
               <li className="flex gap-2 ">
-              <BsFillPersonCheckFill className="text-[var(--primary)] text-2xl"/>
+              <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-2xl"/>
                 <strong>AMFI-Registered & Trusted:</strong> Backed by
                 expertise and ethical practices.
               </li>
               <li className="flex gap-2 ">
-              <BsFillPersonCheckFill className="text-[var(--primary)] text-2xl"/>
+              <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-2xl"/>
                 <strong>One-Stop Solution:</strong> Investment, loan, and
                 insurance products under one roof.
               </li>
               <li className="flex gap-2 ">
-              <BsFillPersonCheckFill className="text-[var(--primary)] text-2xl"/>
+              <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-2xl"/>
                 <strong>Technology-Driven:</strong> Smart, simple, and
                 transparent financial tracking.
               </li>
               <li className="flex gap-2 ">
-              <BsFillPersonCheckFill className="text-[var(--primary)] text-2xl"/>
+              <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-2xl"/>
                 <strong>Personalized Solutions:</strong> Tailored to your
                 financial goals and risk appetite.
               </li>
               <li className="flex gap-2 ">
-              <BsFillPersonCheckFill className="text-[var(--primary)] text-2xl"/>
+              <BsFillPersonCheckFill className="text-[var(--primary)] text-5xl md:text-2xl"/>
                 <strong>Continuous Monitoring:</strong> Regular updates and
                 tracking for optimal growth.
               </li>

@@ -13,16 +13,16 @@ const LoanAgainstMutualFunds = () => {
     <div className='main_section'>
     <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className="pb-[50px]">
+      <div className="pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">Loan Against Mutual Funds</h1>
-        <div className="em_bar mx-auto">
+        {/* <div className="em_bar mx-auto">
           <div className="em_bar_bg" />
         </div>
-        <p className="text-xl text-gray-600 mt-2">Access Funds Without Breaking Your Investments</p>
+        <p className="text-xl text-gray-600 mt-2">Access Funds Without Breaking Your Investments</p> */}
       </div>
 
       {/* Introduction with Image */}
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Loan Against Mutual Funds (LAM) allows you to unlock the value of your mutual fund investments without redeeming them. You can borrow funds by pledging your mutual fund units as collateral, making it a convenient and cost-effective option for short-term financial needs. This helps you maintain your investment portfolio while managing liquidity efficiently.
@@ -40,7 +40,7 @@ const LoanAgainstMutualFunds = () => {
       </div>
 
       {/* Benefits */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Benefits of Loan Against Mutual Funds</h2>
         <ul className="list-disc pl-5 space-y-4">
           <li><p className="text-gray-700"><strong>No Need to Redeem:</strong> Continue earning returns on your investments while availing the loan.</p></li>
@@ -52,7 +52,7 @@ const LoanAgainstMutualFunds = () => {
       </div>
 
       {/* Key Highlights */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Key Highlights</h2>
         <ul className="list-disc pl-5 space-y-4">
           <li><p className="text-gray-700"><strong>Eligible Schemes:</strong> Most equity and debt mutual funds are eligible.</p></li>
@@ -68,7 +68,7 @@ const LoanAgainstMutualFunds = () => {
           Need liquidity but don’t want to exit your mutual fund investments? Leverage your portfolio with a Loan Against Mutual Funds and meet your financial goals.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
             Apply for LAM Today!
           </Button>
         </Link>

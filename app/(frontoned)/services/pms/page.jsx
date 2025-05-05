@@ -14,19 +14,13 @@ const PortfolioManagementServices = () => {
     <div className="main_section">
     <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className=" pb-[50px]">
+      <div className=" pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">
           Portfolio Management Services
         </h1>
-        <div  className="em_bar mx-auto">
-              <div className="em_bar_bg" />
-            </div>
-        <p className="text-xl text-gray-600 mt-2">
-          Grow and Protect Your Wealth, Your Way
-        </p>
       </div>
 
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 text-justify items-center justify-center lg:mt-10">
             Unlock tailored Portfolio Management Services (PMS) to grow and
@@ -50,7 +44,7 @@ const PortfolioManagementServices = () => {
       </div>
 
       {/* Product Description */}
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2 lg:pr-8 flex justify-center mb-6 lg:mb-0">
           <Image
             src="/Services/pms-2.jpg"
@@ -71,10 +65,10 @@ const PortfolioManagementServices = () => {
           </p>
         </div>
       </div>
-      <div className="mb-8"></div>
+      <div className="mb-5"></div>
 
       {/* Types of Portfolio Management Services */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Types of Portfolio Management Services
         </h2>
@@ -103,7 +97,7 @@ const PortfolioManagementServices = () => {
       </div>
 
       {/* Features of Portfolio Management Services */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Features of Portfolio Management Services
         </h2>
@@ -150,7 +144,7 @@ const PortfolioManagementServices = () => {
           the most of your investments and reach your financial milestones.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+          <Button className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
             Start Investing in PMS Today!
           </Button>
         </Link>

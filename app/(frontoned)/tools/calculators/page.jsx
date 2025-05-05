@@ -16,12 +16,13 @@ import { calculators, performance } from "@/data/calculators";
 export default function Page() {
   const [isMonthlySip, setIsMonthlySip] = useState(true);
   return (
-    <div className="container mx-auto py-10 px-20">
+    <div className="main_section">
+      <div className="container mx-auto px-4 md:px-20">
       <section className="">
         <div className="page-header">
           <div className="">
             {/* <div className="container mx-auto px-4 md:px-20 pt-12 pb-2"> */}
-            <div className="  mb-8">
+            <div className="  mb-5">
               <h1 className="text-2xl md:text-3xl font-bold uppercase">
                 Calculators
               </h1>
@@ -30,37 +31,36 @@ export default function Page() {
           </div>
         </div>
         <div className=" mx-auto">
-          <div className="flex  space-x-4 mb-14">
-            <Button
-              onClick={() => {
-                setIsMonthlySip(true);
-              }}
-              className={`text-md p-5 rounded ${
-                !isMonthlySip
-                  ? "bg-[#1b5880] text-white"
-                  : "bg-[var(--rv-bg-secondary)]"
-              }`}
-            >
-              <p>Calculators</p>
-            </Button>
-            <Button
-              onClick={() => {
-                setIsMonthlySip(false);
-              }}
-              className={`text-md p-5 rounded ${
-                isMonthlySip
-                  ? "bg-[#1b5880] text-white"
-                  : "bg-[var(--rv-bg-secondary)]"
-              }`}
-            >
-              <p>Performance</p>
-            </Button>
-          </div>
+        <div className="flex justify-center mb-14">
+  <div className="inline-flex border border-[var(--primary)] rounded-full shadow-inner">
+    <Button
+      onClick={() => setIsMonthlySip(true)}
+      className={`px-10 md:px-20  py-4 text-lg font-medium border border-[var(--primary)] rounded-l-full transition-all duration-300 ${
+        isMonthlySip
+          ? "bg-[var(--primary)] text-white"
+          : "bg-white text-[var(--primary)]"
+      }`}
+    >
+      Calculators
+    </Button>
+    <Button
+      onClick={() => setIsMonthlySip(false)}
+      className={`px-10 md:px-20 py-4 text-lg font-medium border border-[var(--primary)] rounded-r-full transition-all duration-300 ${
+        !isMonthlySip
+           ? "bg-[var(--primary)] text-white"
+          : "bg-white text-[var(--primary)]"
+      }`}
+    >
+      Performance
+    </Button>
+  </div>
+</div>
+
           {isMonthlySip ? (
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
               {calculators.map((item, index) => (
                 <Link href={item?.route} key={index}>
-                  <div className="px-2 bg-[#1b5880] w-100 md:w-64 h-20  flex  gap-4 rounded items-center shadow-md group">
+                  <div className="px-2 bg-[var(--primary)]  h-14  flex  gap-4 rounded items-center shadow-md group">
                     <div>
                       <Image src={item?.image} alt="" width={20} height={20} />
                     </div>
@@ -74,10 +74,10 @@ export default function Page() {
               ))}
             </div>
           ) : (
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
               {performance.map((item, index) => (
                 <Link href={item.link} key={index}>
-                  <div className="px-2  bg-[#1b5880] w-100 md:w-64     h-20 flex gap-4 rounded items-center shadow-md group">
+                  <div className="px-2  bg-[var(--primary)]  h-14 flex gap-4 items-center rounded-md  shadow-md group">
                     <div>
                       <Image src={item?.image} alt="" width={20} height={20} />
                     </div>
@@ -93,6 +93,7 @@ export default function Page() {
           )}
         </div>
       </section>
+    </div>
     </div>
   );
 }

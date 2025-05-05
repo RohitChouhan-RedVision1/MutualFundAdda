@@ -11,7 +11,7 @@ export const metadata = {
 const Insurance = () => {
     return (
         <div className='main_section'>
-        <div className="container mx-auto px-4 md:px-32 py-18">
+        <div className="container mx-auto px-4 md:px-32">
             {/* Heading and Subheading */}
             <div className="text-center pt-[130px] pb-[50px]">
                 <h1 className="text-2xl md:text-3xl font-bold uppercase">Life & Health Insurance</h1>
@@ -68,7 +68,7 @@ const Insurance = () => {
                     Secure your future with comprehensive life and health insurance. Protect yourself and your loved ones from financial uncertainties today.
                 </p>
                 <Link href="/contactus" >
-                    <Button className="bg-[#2d5579] text-white rounded-2xl pl-8 pr-8 text-xl">Get Started with Insurance</Button>
+                    <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">Get Started with Insurance</Button>
                 </Link>
             </div>
         </div>

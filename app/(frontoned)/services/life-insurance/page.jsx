@@ -13,7 +13,7 @@ const LifeInsurance = () => {
     <div className='main_section'>
     <div className="container mx-auto px-4 md:px-20">
       {/* Heading and Subheading */}
-      <div className=" pb-[50px]">
+      <div className=" pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">Life Insurance</h1>
         <div className="em_bar mx-auto">
           <div className="em_bar_bg" />
@@ -22,7 +22,7 @@ const LifeInsurance = () => {
       </div>
 
       {/* Introduction with Image */}
-      <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Life insurance is a crucial financial tool that ensures your family's financial security in your absence. It not only offers peace of mind but also acts as a savings and investment avenue. Whether you're looking to protect your dependents, build long-term wealth, or plan for retirement, we offer a variety of life insurance products tailored to your specific needs.
@@ -40,7 +40,7 @@ const LifeInsurance = () => {
       </div>
 
       {/* Benefits of Life Insurance */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Why Life Insurance is Essential</h2>
         <ul className="list-disc pl-5 space-y-4">
           <li><p className="text-gray-700"><strong>Financial Security:</strong> Provides a financial safety net for your family in your absence.</p></li>
@@ -52,7 +52,7 @@ const LifeInsurance = () => {
       </div>
 
       {/* Types of Life Insurance */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Types of Life Insurance Plans</h2>
         <ul className="list-disc pl-5 space-y-4">
           <li>
@@ -84,7 +84,7 @@ const LifeInsurance = () => {
           Safeguard your family's future and build wealth with a suitable life insurance plan. Let us help you choose the right policy for your needs and goals.
         </p>
         <Link href="/contactus" className="text-white">
-          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">
+          <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
             Protect Your Future Now!
           </Button>
         </Link>

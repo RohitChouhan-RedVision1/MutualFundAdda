@@ -13,16 +13,16 @@ const LoanAgainstProperty = () => {
         <div className='main_section'>
         <div className="container mx-auto px-4 md:px-20 ">
             {/* Heading and Subheading */}
-            <div className=" pb-[50px]">
+            <div className=" pb-[20px]">
                 <h1 className="text-2xl md:text-3xl font-bold uppercase">Loan Against Property (LAP)</h1>
-                <div className="em_bar mx-auto">
+                {/* <div className="em_bar mx-auto">
                     <div className="em_bar_bg" />
                 </div>
-                <p className="text-xl text-gray-600 mt-2">Unlock the Potential of Your Property</p>
+                <p className="text-xl text-gray-600 mt-2">Unlock the Potential of Your Property</p> */}
             </div>
 
             {/* Introduction with Image */}
-            <div className="mb-8 flex flex-col lg:flex-row items-center lg:items-start">
+            <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-1/2">
                     <p className="text-lg text-gray-700 mt-10 text-justify">
                         Loan Against Property (LAP) is a secured loan where you can leverage your property (residential, commercial, or industrial) as collateral to access funds for various personal or business needs. Whether you're looking for financial assistance for a home renovation, education, or expanding your business, LAP offers competitive interest rates and flexible repayment terms.
@@ -40,7 +40,7 @@ const LoanAgainstProperty = () => {
             </div>
 
             {/* Benefits of LAP */}
-            <div className="mb-8">
+            <div className="mb-5">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">Benefits of Loan Against Property</h2>
                 <ul className="list-disc pl-5 space-y-4">
                     <li>
@@ -62,7 +62,7 @@ const LoanAgainstProperty = () => {
             </div>
 
             {/* LAP Eligibility & Requirements */}
-            <div className="mb-8">
+            <div className="mb-5">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">Eligibility & Requirements for LAP</h2>
                 <ul className="list-disc pl-5 space-y-4">
                     <li>
@@ -80,7 +80,7 @@ const LoanAgainstProperty = () => {
                     Unlock the potential of your property with a Loan Against Property. Get easy access to funds with flexible terms and competitive interest rates. Apply for your LAP today and achieve your financial goals!
                 </p>
                 <Link href="/contactus" className="text-white">
-                    <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow">Apply for Loan Against Property Now!</Button>
+                    <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">Apply for Loan Against Property Now!</Button>
                 </Link>
             </div>
         </div>

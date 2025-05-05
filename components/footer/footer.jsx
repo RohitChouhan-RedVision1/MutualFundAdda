@@ -213,7 +213,7 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
                   Investments in Securities markets are subject to market risks,
                   read all the related documents carefully before investing.
                 </p>
-                <div className="footer-content pb-4 flex gap-10 items-center justify-center my-10">
+                <div className="footer-content pb-4 flex flex-col md:flex-row gap-10 items-center justify-center my-10">
                   <div className="footer-list flex flex-col md:flex-row gap-2 ">
                     <div className="image">
                       <img src="/amfi.jpg" alt="amfi" height={100} width={100} />
@@ -236,7 +236,7 @@ const expiryDate = formatDate(arn?.euins[0]?.expiryDate);
       </div>
 
       {/* Copyright Section */}
-      <div className=" bg-[var(--primary)]">
+      <div className=" bg-[var(--primary)] pb-5 md:pb-1">
       <div className="container mx-auto px-4 lg:px-10  flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
   
   {/* Left: Logo */}
