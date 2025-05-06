@@ -97,7 +97,7 @@ export default function PayPremium() {
                 </div>
             </div>
             <div className='md:px-20 px-4 '>
-                <div className='px-5 bg-[var(--dark-color)] text-white flex items-center gap-x-10 rounded'>
+                <div className='px-5 py-4 bg-[var(--primary)] text-white flex items-center gap-x-10 rounded'>
                     <div className='cursor-pointer' onClick={() => handleCategoryClick('gi')}>
                         <p className={`uppercase font-semibold ${selectedCategory === 'gi' ? 'text-gray-300' : ''}`}>General Insurance</p>
                     </div>
