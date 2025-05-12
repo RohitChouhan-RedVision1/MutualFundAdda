@@ -74,7 +74,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
       <div className="py-6">
         <div className="container mx-auto px-4 lg:px-12 flex flex-col items-center justify-center">
           <h2 className="text-4xl font-bold text-center text-white">
-            Start Your Journey with REDVision Today
+            Start Your Journey with <span className="font-bold">mutual</span>fundsadda Today
           </h2>
           <p className="text-center text-white">
             Leading the Way in Smart Solutions for Mutual Fund Distributors in
