@@ -50,17 +50,7 @@ const SubscribCard = () => {
         Our Esteemed Partners
       </motion.h2>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={fadeInVariants}
-        custom={2}
-        className="em_bar mx-auto"
-      >
-        <div className="em_bar_bg" />
-      </motion.div>
-
+    
       <Marquee
         speed={60}
         gradient={false}
@@ -74,7 +64,7 @@ const SubscribCard = () => {
               alt={`AMC Logo ${index + 1}`}
               width={200}
               height={100}
-              className="opacity-50 hover:opacity-100 transition ease-in-out duration-150"
+              className=" transition ease-in-out duration-150"
             />
           </div>
         ))}

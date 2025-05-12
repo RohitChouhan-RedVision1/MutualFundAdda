@@ -48,7 +48,7 @@ const ToolsSection = () => {
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold uppercase">Financial Tools</h2>
       </div>
-      <div className={`grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 py-4 gap-4 ${styles.choose}`}>
+      <div className={`grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 py-4 gap-4 ${styles.choose}`}>
   {tools.map(({ href, img, label, target }, idx) => (
     <div
       key={idx}

@@ -75,10 +75,10 @@ const WhytoChooseus = ({sitedata}) => {
                   </h2>
                 </div>
                 <p className=" text-justify text-gray-600 mt-4 mb-5">
-                  Welcome to {sitedata.websiteName}, your trusted financial
+                  Welcome to <span className="font-bold">mutual</span>fundsadda, your trusted financial
                   companion in India. We understand that your financial journey
                   is more than just numbers; it's a story of dreams,
-                  aspirations, and the legacy you want to leave behind. At {sitedata.websiteName}, we are driven by the belief that everyone
+                  aspirations, and the legacy you want to leave behind. At <span className="font-bold">mutual</span>fundsadda, we are driven by the belief that everyone
                   deserves a secure and prosperous future:-
                 </p>
                 <ul className="flex flex-col gap-4">

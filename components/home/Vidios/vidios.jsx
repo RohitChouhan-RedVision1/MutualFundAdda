@@ -28,7 +28,7 @@ const VideoSlider = ({video}) => {
   return (
     <div className="main_section bg-[#f3f6fa]">
       <div className="text-center mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold uppercase">Recent Videos</h2>
+        <h2 className="text-2xl md:text-3xl font-bold uppercase">Investor awareness</h2>
       </div>
       <div className="container mx-auto px-4">
         <Slider {...settings}>

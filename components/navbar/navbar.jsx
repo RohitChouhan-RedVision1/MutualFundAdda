@@ -10,9 +10,35 @@ import { Button } from "../ui/button";
 const Navbar = ({ servicedata }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [isMegaMenuToolsOpen, setIsMegaMenuToolsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMegaMenuMfdsOpen, setIsMegaMenuMfdsOpen] = useState(false);
+  const [isMegaMenuContact, setIsMegaMenuContact] = useState(false);
+  const [isToolsOpen, setIsToolsOpen] = useState(false);
+  const [isMfdsOpen, setIsMfdsOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
+
+  const tools = [
+    { href: "/tools/calculators", text: "Calculators" },
+    { href: "/tools/downloadforms", text: "Download Form" },
+    { href: "/tools/financialhealth", text: "Financial health" },
+    { href: "/tools/paypremiumonline", text: "Pay Premium online" },
+    { href: "/tools/riskprofile", text: "Risk Profile" },
+    { href: "/tools/usefullinks", text: "Usefull Links" },
+  
+  ];
+
+  const mfds = [
+    // { href: "/contactus", text: "Contact us" },
+    
+  ];
+
+  const contact = [
+    { href: "/contactus", text: "Contact us" },
+  
+  ];
   // console.log(servicedata)
   useEffect(() => {
     const handleScroll = () => {
@@ -31,28 +57,30 @@ const Navbar = ({ servicedata }) => {
           isScrolled ? "sticky bg-[var(--primary)] shadow-lg " : "relative bg-[var(--primary)]"
         }`}
       >
-        <div className=" container mx-auto px-2  lg:px-10 relative">
-          <div className="flex items-center justify-between  relative bg-[var(--primary)] z-50 ">
+        <div className="mainnavbar relative">
+          <div className="flex items-center justify-between gap-2  relative bg-[var(--primary)] z-50 ">
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="RF Wealth Logo"
-                width={130}
+                width={300}
                 height={100}
               />
             </Link>
 
             {/* Navigation (Hidden on Mobile) */}
-            <nav className="hidden text-[18px] md:flex space-x-6">
-              <Link href="/" className="text-white">
+            <nav className="screennavbar text-[16px]  space-x-4">
+              {/* <Link href="/" className="text-white">
                 Home
-              </Link>
+              </Link> */}
               <Link href="/about" className="text-white">
-                About
+                About us
               </Link>
 
               {/* Services Dropdown */}
+              
+
               <div
                 className="relative group"
                 onMouseEnter={() => setIsMegaMenuOpen(true)}
@@ -82,20 +110,111 @@ const Navbar = ({ servicedata }) => {
                   )}
                 </AnimatePresence>
               </div>
-
-              <Link href="/tools" className="text-white">
-                Tools
-              </Link>
-              <Link href="/contactus" className="text-white">
-                Contact
-              </Link>
+              <div
+                className="relative group"
+                onMouseEnter={() => setIsMegaMenuToolsOpen(true)}
+                onMouseLeave={() => setIsMegaMenuToolsOpen(false)}
+              >
+                <span className="text-white flex items-center cursor-pointer">
+                  Tools <span className="ml-1">&#x25BE;</span>
+                </span>
+                <AnimatePresence>
+                  {isMegaMenuToolsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute left-0 mt-2 w-48 bg-[var(--primary)] shadow-lg rounded-md text-white"
+                    >
+                      {tools.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block px-4 py-2 hover:bg-[var(--primary)]"
+                        >
+                          {item.text}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              <div
+                className="relative group"
+                onMouseEnter={() => setIsMegaMenuMfdsOpen(true)}
+                onMouseLeave={() => setIsMegaMenuMfdsOpen(false)}
+              >
+                <span className="text-white flex items-center cursor-pointer">
+                  MFDs Hub <span className="ml-1">&#x25BE;</span>
+                </span>
+                <AnimatePresence>
+                  {isMegaMenuMfdsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute left-0 mt-2 w-48 bg-[var(--primary)] shadow-lg rounded-md text-white"
+                    >
+                      {mfds.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block px-4 py-2 hover:bg-[var(--primary)]"
+                        >
+                          {item.text}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              <div
+                className="relative group"
+                onMouseEnter={() => setIsMegaMenuContact(true)}
+                onMouseLeave={() => setIsMegaMenuContact(false)}
+              >
+                <span className="text-white flex items-center cursor-pointer">
+                  Get In Touch<span className="ml-1">&#x25BE;</span>
+                </span>
+                <AnimatePresence>
+                  {isMegaMenuContact && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute left-0 mt-2 w-48 bg-[var(--primary)] shadow-lg rounded-md text-white"
+                    >
+                      {contact.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block px-4 py-2 hover:bg-[var(--primary)]"
+                        >
+                          {item.text}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              
               <Link href="/blogs" className="text-white">
                 Blogs
               </Link>
             </nav>
 
             {/* Portfolio Login Button (Hidden on Mobile) */}
-            <div className="hidden md:block text-[18px]">
+            <div className="screennavbar md:flex gap-2 text-[16px]">
+              <Link href="/login">
+                <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
+                Invest now
+                </button>
+              </Link>
+              <Link href="/login">
+                <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
+                NRI corner
+                </button>
+              </Link>
               <Link href="/login">
                 <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
                   Login
@@ -104,7 +223,7 @@ const Navbar = ({ servicedata }) => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="mobilebar">
               <Button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="bg-white text-[var(--primary)] focus:outline-none"
@@ -120,7 +239,7 @@ const Navbar = ({ servicedata }) => {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.3 }}
-            className="absolute top-20 left-0 w-full bg-[var(--primary)]  z-0"
+            className="absolute top-16 left-0 w-full bg-[var(--primary)]  z-0"
           >
             <div className="p-6">
               {/* Mobile Navigation */}
@@ -137,7 +256,7 @@ const Navbar = ({ servicedata }) => {
                   className="block text-white font-semibold "
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  About
+                  About us
                 </Link>
 
                 {/* Services Dropdown in Mobile Menu */}
@@ -175,31 +294,132 @@ const Navbar = ({ servicedata }) => {
                   </AnimatePresence>
                 </div>
 
-                <Link
-                  href="/tools"
-                  className="block text-white font-semibold hover:text-[var(--primary)] cursor-pointer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tools
-                </Link>
+                <div className="">
+                  <h3
+                    className=" text-white font-semibold cursor-pointer flex justify-between"
+                    onClick={() => setIsToolsOpen(!isToolsOpen)}
+                  >
+                    Tools
+                    <span>{isToolsOpen ? "▲" : "▼"}</span>
+                  </h3>
+                  <AnimatePresence>
+                    {isToolsOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        {tools.map((tool, index) => (
+                          <Link
+                            key={index}
+                            href={tool?.href}
+                            className="block text-white  mt-2 text-left"
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setIsToolsOpen(false);
+                            }}
+                          >
+                            {tool.text}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                <div className="">
+                  <h3
+                    className=" text-white font-semibold cursor-pointer flex justify-between"
+                    onClick={() => setIsMfdsOpen(!isMfdsOpen)}
+                  >
+                    MFDs Hub
+                    <span>{isToolsOpen ? "▲" : "▼"}</span>
+                  </h3>
+                  <AnimatePresence>
+                    {isMfdsOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        {mfds.map((tool, index) => (
+                          <Link
+                            key={index}
+                            href={tool?.href}
+                            className="block text-white  mt-2 text-left"
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setIsMfdsOpen(false);
+                            }}
+                          >
+                            {tool.text}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                <div className="">
+                  <h3
+                    className=" text-white font-semibold cursor-pointer flex justify-between"
+                    onClick={() => setIsContactOpen(!isContactOpen)}
+                  >
+                    Get In Touch
+                    <span>{isToolsOpen ? "▲" : "▼"}</span>
+                  </h3>
+                  <AnimatePresence>
+                    {isContactOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        {contact.map((tool, index) => (
+                          <Link
+                            key={index}
+                            href={tool?.href}
+                            className="block text-white  mt-2 text-left"
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setIsContactOpen(false);
+                            }}
+                          >
+                            {tool.text}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
 
                 <Link
-                  href="/contactus"
-                  className="block text-white font-semibold hover:text-[var(--primary)] cursor-pointer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Contact
-                </Link>
-                <Link
                   href="/blogs"
-                  className="block text-white font-semibold hover:text-[var(--primary)] cursor-pointer"
+                  className="block text-white font-semibold cursor-pointer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Blogs
                 </Link>
                 <Link
                   href="/login"
-                  className="block text-white font-semibold hover:text-[var(--primary)] cursor-pointer"
+                  className="block text-white font-semibold  cursor-pointer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Invest now
+                </Link>
+                <Link
+                  href="/login"
+                  className="block text-white font-semibold  cursor-pointer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                 NRI corner
+                </Link>
+                <Link
+                  href="/login"
+                  className="block text-white font-semibold  cursor-pointer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Login

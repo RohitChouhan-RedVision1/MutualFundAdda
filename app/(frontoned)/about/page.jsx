@@ -38,10 +38,10 @@ const AboutUsPage = async () => {
         <div className="container mx-auto px-4 md:px-20">
           {/* Heading and Subheading */}
 
-          {/* {sitedata.websiteName} - Company Overview */}
+         
           <div className="mb-12">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Who We Are – {sitedata?.websiteName}
+              Who We Are – <span className="font-bold">mutual</span>fundsadda
             </h2>
             <p className="text-[16px] text-gray-700 mb-4">
               We are an <strong>AMFI-Registered Mutual Fund Distributor</strong>
@@ -51,7 +51,7 @@ const AboutUsPage = async () => {
               confidence.
             </p>
             <p className="text-[16px] text-gray-700 mb-4">
-              At <strong>{sitedata?.websiteName}</strong>, we provide a one-stop
+              At <span className="font-bold">mutual</span>fundsadda, we provide a one-stop
               financial platform for Mutual Funds, Direct Equity, Fixed
               Deposits, Insurance, Home Loans, Loans Against Shares & Mutual
               Funds, Corporate FDs, Portfolio Management Services (PMS), and
@@ -68,7 +68,7 @@ const AboutUsPage = async () => {
             </p>
 
             <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
-              Why Choose {sitedata?.websiteName}?
+              Why Choose <span className="font-bold">mutual</span>fundsadda?
             </h3>
             <ul className="pl-6 space-y-3 text-[16px] text-gray-700">
               <li className="flex gap-2 ">
@@ -139,7 +139,7 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
                 Our Mission
               </h2>
               <p className="text-[16px] text-gray-700 mb-4 text-justify">
-                At {sitedata?.websiteName}, our mission is to guide you through
+                At <span className="font-bold">mutual</span>fundsadda, our mission is to guide you through
                 the complex world of finance with ease. Whether you're looking
                 to invest, save, or borrow, we offer personalized financial
                 solutions that align with your goals. Our mission is to empower
@@ -151,7 +151,7 @@ At Alpha72, we help you find your Alpha. Let’s build wealth that serves your d
                 Our Vision
               </h2>
               <p className="text-[16px] text-gray-700 mb-4 text-justify">
-                At {sitedata?.websiteName}, Our vision is to become the leading
+                At <span className="font-bold">mutual</span>fundsadda, Our vision is to become the leading
                 force in shaping a financially secure and prosperous India. We
                 aim to set new standards in the financial industry and be the
                 go-to partner for those seeking financial stability, growth, and

@@ -9,7 +9,8 @@
   --font-sans:  sans-serif; /* Updated font */
   --rv-bg-primary:#0133cd;
   --rv-white:#f4f4f4;
-  --font-body:"Roboto"
+  --font-body:"Poppins";
+  font-size: 16px;
 }
 
 body {
@@ -36,4 +37,27 @@ a,button{
 
 .main_section {
   padding: 60px 0;
+}
+
+
+/* .mainnavbar{
+
+} */
+
+.screennavbar{
+  display: flex;
+}
+
+.mobilebar{
+  display: none;
+}
+
+@media (max-width: 1160px) {
+  .screennavbar {
+    display: none !important;
+  }
+  .mobilebar{
+    display: block;
+  }
+  
 }
