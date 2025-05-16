@@ -4,11 +4,11 @@ import React from "react";
 const LifeInsuranceContent = () => {
   return (
     <div className="main_section">
-    <div className="mb-10 container mx-auto px-4 md:px-32 ">
-      <h2 className="text-2xl font-bold mb-4">Life Insurance</h2>
+    <div className="container mx-auto px-4 md:px-32 ">
+      <h2 className="text-2xl font-bold">Life Insurance</h2>
 
       {/* Introduction */}
-      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Life insurance is a crucial financial tool that ensures your family's financial security in your absence. It not only offers peace of mind but also acts as a savings and investment avenue. Whether you're looking to protect your dependents, build long-term wealth, or plan for retirement, we offer a variety of life insurance products tailored to your specific needs.
@@ -26,8 +26,9 @@ const LifeInsuranceContent = () => {
       </div>
 
       {/* Benefits */}
-      <div className="mb-5">
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">Why Life Insurance is Essential</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-5">
+        <div className="mb-5">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">Why Life Insurance is Essential</h3>
         <ul className="list-disc pl-5 space-y-4 text-gray-700">
           <li><strong>Financial Security:</strong> Provides a safety net for your family.</li>
           <li><strong>Tax Benefits:</strong> Save taxes under 80C and 10(10D).</li>
@@ -47,6 +48,7 @@ const LifeInsuranceContent = () => {
           <li><strong>ULIPs:</strong> Life cover + market-linked investments.</li>
           <li><strong>Money-Back Policies:</strong> Regular payouts + maturity + cover.</li>
         </ul>
+      </div>
       </div>
     </div>
     </div>

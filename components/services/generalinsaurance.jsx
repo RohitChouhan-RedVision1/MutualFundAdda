@@ -24,6 +24,7 @@ const GeneralInsuranceContent = () => {
         </div>
       </div>
 
+<div className="grid grid-cols-1 md:grid-cols-2 mt-5">
       <div className="mb-5">
         <h3 className="text-xl font-semibold text-gray-800 mb-4">Benefits of General Insurance</h3>
         <ul className="list-disc pl-5 space-y-4 text-gray-700">
@@ -44,6 +45,8 @@ const GeneralInsuranceContent = () => {
           <li><strong>Personal Accident Insurance:</strong> Covers accidental injuries or death.</li>
         </ul>
       </div>
+          </div>
+
     </div>
     </div>
   );

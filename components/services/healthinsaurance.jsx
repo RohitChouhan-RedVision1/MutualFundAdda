@@ -24,6 +24,7 @@ const HealthInsuranceContent = () => {
         </div>
       </div>
 
+<div className="grid grid-cols-1 md:grid-cols-2 mt-5">
       <div className="mb-5">
         <h3 className="text-xl font-semibold text-gray-800 mb-4">Benefits of Health Insurance</h3>
         <ul className="list-disc pl-5 space-y-4 text-gray-700">
@@ -44,6 +45,7 @@ const HealthInsuranceContent = () => {
           <li><strong>Senior Citizen Plans:</strong> Special coverage for people aged 60+.</li>
           <li><strong>Top-Up Plans:</strong> Extra coverage on top of existing policies.</li>
         </ul>
+      </div>
       </div>
     </div>
     </div>
