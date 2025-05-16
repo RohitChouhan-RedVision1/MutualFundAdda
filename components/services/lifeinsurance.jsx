@@ -4,7 +4,7 @@ import React from "react";
 const LifeInsuranceContent = () => {
   return (
     <div className="main_section">
-    <div className="container mx-auto px-4 md:px-32 ">
+    <div className="container mx-auto px-4 md:px-32 pt-10 ">
       <h2 className="text-2xl font-bold">Life Insurance</h2>
 
       {/* Introduction */}

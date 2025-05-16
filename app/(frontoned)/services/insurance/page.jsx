@@ -19,7 +19,7 @@ const Insurance = () => {
       const element = document.getElementById(id);
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
         }, 100);
       }
     }

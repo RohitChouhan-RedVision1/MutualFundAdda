@@ -4,7 +4,7 @@ import React from "react";
 const HealthInsuranceContent = () => {
   return (
     <div className="bg-[#EFF1F9] main_section">
-    <div className="container mx-auto px-4 md:px-32  ">
+    <div className="container mx-auto px-4 md:px-32 pt-10  ">
       <h2 className="text-2xl font-bold mb-4">Health Insurance</h2>
 
       <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
