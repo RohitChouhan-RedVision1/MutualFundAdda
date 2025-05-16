@@ -66,11 +66,12 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
   ];
   return (
     <div className="relative">
-  <div
-    className="absolute top-0 left-0 w-full h-[1200] bg-no-repeat bg-cover bg-center"
+
+    <footer className="bg-[#000000] pt-[60px] ">
+        <div
+    className="absolute top-0 z-0 left-0 w-full h-[1200] bg-no-repeat bg-cover bg-center"
     style={{ backgroundImage: "url('/bgshape.svg')" }}
   ></div>
-    <footer className="bg-[#000000] pt-[60px] ">
       <div className="py-6">
         <div className="container mx-auto px-4 lg:px-12 flex flex-col items-center justify-center">
           <h2 className="text-4xl font-bold text-center text-white">
@@ -88,17 +89,17 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
         </div>
       </div>
 
-      <section className=" container mx-auto px-4  lg:px-10  ">
+      <div className="relative z-1 container mx-auto px-4  lg:px-10  ">
         <div className=" py-6 px-4 md:px-0 lg:-px-4 border-b-1 border-[#ffffff6b]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* About Us */}
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-xl text-white font-semibold mb-4">
+              <h4 className="text-xl text-white font-semibold mb-4 ">
                 Quick Links
               </h4>
-              <ul className="space-y-3 text-md text-gray-400">
+              <ul className="space-y-3 text-md text-gray-400 cursor-pointer">
                 <li>
                   <Link href="/" className="hover:text-white">
                     Home
@@ -243,7 +244,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <div className="">
         <div className="container mx-auto px-4 lg:px-12 pl-2 flex flex-col lg:flex-row items-center justify-between">

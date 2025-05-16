@@ -30,7 +30,9 @@ export default async function Page() {
         <Calculator/>
         <Howwework/>
         <MythFacts/>
-        <TestimonialsSlider testimonial={testimonial}/>
+        <div id="testimonials">
+          <TestimonialsSlider testimonial={testimonial}/>
+        </div>
         <BlogSlider blogs={blogs}/>
         <VideoSlider video={video}/>
           <SubscribCard/>
