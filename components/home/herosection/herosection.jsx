@@ -31,7 +31,7 @@ export const HeroSection = () => {
   return (
     <section>
       <div className={`relative ${styles.main_banner}`}>
-        <div className="container mx-auto px-4 md:px-10">
+        <div className="container px-2 md:px-0 mx-auto ">
           <motion.div
             className="grid lg:grid-cols-2 md:py-5 lg:py-0 gap-10 items-center"
             variants={containerVariants}
@@ -77,7 +77,7 @@ export const HeroSection = () => {
               <Image
                 src="/mf-adda/home-banner-img.svg"
                 alt="Hero Banner"
-                width={600}
+                width={700}
                 height={600}
                 className="max-w-full h-auto"
               />

@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function ContactForm({ sitedata }) {
-  const [captcha, setCaptcha] = useState("");
-  const [userCaptcha, setUserCaptcha] = useState("");
+  const [hcaptchaToken, setHcaptchaToken] = useState("");
   const [formData, setFormData] = useState({
     username: "",
     mobile: "",
@@ -15,16 +15,6 @@ export default function ContactForm({ sitedata }) {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    refreshCaptcha();
-  }, []);
-
-  const refreshCaptcha = () => {
-    const randomString = Math.random().toString(36).substring(2, 8).toUpperCase();
-    setCaptcha(randomString);
-    setUserCaptcha(""); // Reset input field
-  };
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -33,22 +23,21 @@ export default function ContactForm({ sitedata }) {
   const emailContent = "We’re excited to help you reach your financial goals.";
   const emailData = {
     to: formData.email,
-    subject: 'Thank You for Your Enquiry!',
+    subject: "Thank You for Your Enquiry!",
     text: `Dear ${formData.username},\n\nWe sincerely appreciate your interest and the time you took to fill out our enquiry form. We have received your details, and our team will be in touch with you soon.\n\n${emailContent}`,
   };
 
   const senderData = {
-    to: sitedata?.email || "support@alpha72wealth.com",
-    subject: 'New Enquiry Received',
+    to: sitedata?.email,
+    subject: "New Enquiry Received",
     text: `New Enquiry from Contact Us:\n\nUser Name: ${formData.username}\nEmail: ${formData.email}\nMobile: ${formData.mobile}\nMessage: ${formData.message}\n\n${emailContent}`,
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (userCaptcha.trim().toUpperCase() !== captcha.trim().toUpperCase()) {
-      alert("Captcha doesn't match. Please try again.");
-      refreshCaptcha();
+    if (!hcaptchaToken) {
+      alert("Please complete the captcha verification.");
       return;
     }
 
@@ -60,10 +49,6 @@ export default function ContactForm({ sitedata }) {
       if (res.status === 201) {
         await axios.post("/api/email", emailData);
         await axios.post("/api/email", senderData);
-  
-        // Optional: send confirmation and notification emails
-        // await axios.post("/api/email", { ...emailData });
-        // await axios.post("/api/email", { ...senderData });
 
         setSubmitted(true);
         setFormData({
@@ -72,8 +57,7 @@ export default function ContactForm({ sitedata }) {
           email: "",
           message: "",
         });
-        setUserCaptcha("");
-        refreshCaptcha();
+        setHcaptchaToken("");
       } else {
         alert("Something went wrong.");
       }
@@ -93,81 +77,79 @@ export default function ContactForm({ sitedata }) {
         </div>
       )}
 
-      <div>
-        <input
-          name="username"
-          type="text"
-          placeholder="Name"
-          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
-          value={formData.username}
-          onChange={handleChange}
-          required
+      <input
+        name="username"
+        type="text"
+        placeholder="Name*"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
+        value={formData.username}
+        onChange={handleChange}
+        required
+      />
+
+      <input
+        name="mobile"
+        type="tel"
+        placeholder="Mobile*"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
+        value={formData.mobile}
+        onChange={handleChange}
+        required
+      />
+
+      <input
+        name="email"
+        type="email"
+        placeholder="Email*"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
+
+      {/* <select
+        name="service"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 text-gray-700 text-sm focus:outline-none focus:border-gray-400"
+        value={formData.service}
+        onChange={handleChange}
+        required
+      >
+        <option value="" disabled>Select a Service*</option>
+        <option>Mutual Funds</option>
+        <option>Portfolio Management Services (PMS)</option>
+        <option>Alternative Investment Funds (AIFs)</option>
+        <option>National Pension System (NPS)</option>
+        <option>Sovereign Gold Bonds (SGB)</option>
+        <option>Structural Products</option>
+        <option>Insurance</option>
+        <option>Loan</option>
+        <option>Corporate FD</option>
+        <option>IPOs & NFOs</option>
+      </select> */}
+
+      <textarea
+        name="message"
+        placeholder="Message"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 h-32"
+        value={formData.message}
+        onChange={handleChange}
+        // required
+      ></textarea>
+
+      <div className="">
+        <HCaptcha
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+          onVerify={setHcaptchaToken}
         />
-      </div>
-      <div>
-        <input
-          name="mobile"
-          type="tel"
-          placeholder="Mobile"
-          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
-          value={formData.mobile}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <input
-          name="email"
-          type="email"
-          placeholder="Email"
-          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <textarea
-          name="message"
-          placeholder="Message"
-          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 h-32"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
       </div>
 
-      <div className="flex  items-center gap-2">
-        <div className="bg-[#f8d7c3] text-[#a30a00] px-8 py-4 rounded font-mono tracking-widest">
-          {captcha}
-        </div>
-        <input
-          name="captcha"
-          type="text"
-          placeholder="Enter Captcha"
-          className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
-          value={userCaptcha}
-          onChange={(e) => setUserCaptcha(e.target.value)}
-          required
-        />
-        <button
-          type="button"
-          className="bg-gray-800 text-white px-8 py-4  text-md transform transition-transform duration-300 hover:scale-105 font-semibold rounded-md shadow"
-          onClick={refreshCaptcha}
-        >
-          Refresh
-        </button>
-      </div>
-
-      <div>
-        <button
-          type="submit"
-          className=" bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow"
-          disabled={loading}
-        >
-          {loading ? "Submitting..." : "Submit"}
-        </button>
-      </div>
+      <button
+        type="submit"
+        className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-6 py-3 text-lg font-semibold rounded-md shadow"
+        disabled={loading}
+      >
+        {loading ? "Submitting..." : "Submit"}
+      </button>
     </form>
   );
 }

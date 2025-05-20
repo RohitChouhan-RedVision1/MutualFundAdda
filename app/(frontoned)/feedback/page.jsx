@@ -123,7 +123,7 @@ const FeedbackForm = () => {
   const renderRadioGroup = (name, label, options) => (
     <div className="mb-4">
       <p className="font-medium text-gray-700">{label}</p>
-      <div className="flex flex-wrap gap-4 mt-2">
+      <div className="flex flex-col gap-4 mt-2">
         {options.map((option) => (
           <label key={option} className="flex items-center space-x-2">
             <input

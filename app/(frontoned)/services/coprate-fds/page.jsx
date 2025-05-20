@@ -12,7 +12,7 @@ export const metadata = {
 const CorporateFDs = () => {
   return (
     <div className="main_section">
-    <div className="container mx-auto px-4 md:px-20">
+    <div className="container mx-auto px-2">
       {/* Heading and Subheading */}
       <div className="">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">
@@ -30,14 +30,9 @@ const CorporateFDs = () => {
       <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
-            Corporate Fixed Deposits (FDs) are term deposit instruments offered
-            by non-banking financial companies (NBFCs) and large corporations. 
-            They typically offer higher interest rates than traditional bank FDs, 
-            making them an attractive option for investors seeking better returns. 
-            While Corporate FDs come with slightly higher risks compared to bank FDs, 
-            they are backed by companies with strong credit ratings, making them a 
-            reliable option for portfolio diversification.
-          </p>
+  Corporate Fixed Deposits (FDs) are term deposit instruments offered by non-banking financial companies (NBFCs) and large corporations. They typically offer higher interest rates than traditional bank FDs, making them an attractive option for investors seeking better returns. While Corporate FDs come with slightly higher risks compared to bank FDs, they are backed by companies with strong credit ratings, making them a reliable option for portfolio diversification. These deposits usually come with fixed tenure options ranging from a few months to several years, allowing investors to choose according to their financial goals. Additionally, Corporate FDs provide regular interest payouts, which can be beneficial for those seeking steady income. It's important to evaluate the creditworthiness of the issuing company before investing and consider them as part of a well-balanced investment strategy to maximize returns while managing risks effectively.
+</p>
+
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
           <Image

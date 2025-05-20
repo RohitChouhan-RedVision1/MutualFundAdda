@@ -8,8 +8,8 @@ import { slugify } from '@/lib/functions';
 // Upload image to Cloudinary
 const uploadImageToCloudinary = async (file) => {
     return new Promise((resolve, reject) => {
-        const stream = cloudinary.uploader.upload_stream(
-            { folder: "BlogsPost" },
+        const stream = cloudinary?.uploader?.upload_stream(
+            { folder: "mutualfundadda/blogs" },
             (error, result) => {
                 if (error) {
                     reject(error);

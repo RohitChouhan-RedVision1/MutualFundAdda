@@ -26,7 +26,7 @@ const AboutUsPage = async () => {
     <div>
       <div className="main_section">
         <div className="">
-          <div className="container mx-auto px-4 md:px-20 pb-2 ">
+          <div className="container mx-auto px-2 pb-2 ">
             <div className="mb-5">
               <h1 className="text-2xl md:text-3xl font-bold uppercase">About Us</h1>
               {/* <p className="text-xl text-black mt-2">
@@ -35,7 +35,7 @@ const AboutUsPage = async () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4 md:px-20">
+        <div className="container mx-auto px-2">
           {/* Heading and Subheading */}
 
          

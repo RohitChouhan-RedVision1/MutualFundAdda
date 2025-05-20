@@ -5,7 +5,7 @@ import cloudinary from '@/lib/cloudinary';
 import { slugify } from '@/lib/functions';
 
 export async function DELETE(req, { params }) {
-    const { id } = params;
+    const { id } = await params;
 
     try {
         await ConnectDB();
@@ -35,7 +35,7 @@ export async function DELETE(req, { params }) {
 
 // GET Blog by ID
 export async function GET(req, { params }) {
-    const { id } = params; // Extract ID from params
+    const { id } = await params; // Extract ID from params
 
     try {
         await ConnectDB(); // Ensure DB connection
@@ -53,7 +53,7 @@ export async function GET(req, { params }) {
 }
 
 export async function PUT(req, { params }) {
-    const { id } = params; // Extract blog ID from params
+    const { id } = await params; // Extract blog ID from params
     const data = await req.formData(); // Retrieve FormData from request
 
     try {
@@ -73,17 +73,17 @@ export async function PUT(req, { params }) {
         // Handle image only if it's provided and not 'null'
         if (data.get('image') && data.get('image') !== 'null') {
             // If there's an old image, delete it from Cloudinary
-            if (blog.image.public_id) {
-                const result = await cloudinary.uploader.destroy(blog.image.public_id);
+                if (blog.image.public_id) {
+                    const result = await cloudinary.uploader.destroy(blog.image.public_id);
 
-                if (result.result !== 'ok') {
-                    return NextResponse.json({ error: 'Failed to delete old image from Cloudinary' }, { status: 500 });
+                    if (result.result !== 'ok') {
+                        return NextResponse.json({ error: 'Failed to delete old image from Cloudinary' }, { status: 500 });
+                    }    
                 }
-            }
 
             // Upload the new image to Cloudinary
-            const uploadResult = await cloudinary.uploader.upload(data.get('image'), {
-                folder: 'blogs',
+            const uploadResult = await cloudinary?.uploader?.upload(data.get('image'), {
+                folder: 'mutualfundadda/blogs',
             });
 
             newImageUrl = uploadResult.secure_url;

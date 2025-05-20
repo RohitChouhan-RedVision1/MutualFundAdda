@@ -9,7 +9,7 @@ export default async function ContactUs() {
     <div>
       <div className="container  mx-auto main_section">
       {/* Contact Info Cards */}
-      <div className="flex px-2 md:px-15 flex-col  gap-4 overflow-hidden rounded-lg mb-8">
+      <div className="flex px-2  flex-col  gap-4 overflow-hidden rounded-lg mb-8">
         {/* Call Us */}
         <div className="flex flex-col md:flex-row gap-4 w-full justify-center items-center text-center">
           <div className="bg-[var(--primary)] text-white p-8 rounded-2xl shadow-md w-full md:w-1/3 flex flex-col items-center justify-center min-h-[200px]">
@@ -36,7 +36,7 @@ export default async function ContactUs() {
       {/* Reach Us */}
 
       {/* Map and Contact Form */}
-      <div className="px-2 md:px-15 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="px-2 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Map */}
         <div className="w-full h-[500px] relative border border-gray-200 rounded">
           <iframe

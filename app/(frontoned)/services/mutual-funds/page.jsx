@@ -12,7 +12,7 @@ export const metadata = {
 const MutualFunds = () => {
   return (
     <div className="main_section">
-      <div className="container mx-auto px-4 md:px-20">
+      <div className="container mx-auto px-2">
         {/* Heading and Subheading */}
 
         <div className="items-center  pb-[20px]">
@@ -41,11 +41,8 @@ const MutualFunds = () => {
               building wealth for both beginners and seasoned investors.
             </p>
             <p className="text-lg text-gray-700 mt-2 text-justify items-center">
-              A mutual fund is a pool of funds collected from investors and
-              invested in a diverse set of financial instruments like stocks,
-              bonds, and other securities. These funds are managed by
-              experienced fund managers who allocate investments across various
-              asset classes to ensure diversified and risk-adjusted returns.
+              A mutual fund is a pool of funds collected from investors and invested in a diverse set of financial instruments like stocks, bonds, and other securities. These funds are managed by experienced fund managers who allocate investments across various asset classes to ensure diversified and risk-adjusted returns. Mutual funds offer professional management, liquidity, and access to different markets with relatively low capital. They are ideal for long-term wealth creation, retirement planning, or systematic investment. With options like equity, debt, and hybrid funds, investors can choose based on their goals and risk appetite. SIPs enable disciplined investing through small, regular contributions.
+
             </p>
           </div>
           <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
@@ -177,7 +174,7 @@ const MutualFunds = () => {
             investment options, and low entry costs, mutual funds provide a
             smart path to long-term growth. Begin your investment journey today!
           </p>
-          <Link href="/contactus" className="text-white">
+          <Link href="/login" className="text-white">
             <Button className="bg-[var(--primary)] hover:bg-[var(--primary)] transform transition-transform duration-300 hover:scale-105 text-white px-2 md:px-6 py-3 text-md md:text-lg font-semibold rounded-md shadow">
               Start Investing in Mutual Funds Today!
             </Button>

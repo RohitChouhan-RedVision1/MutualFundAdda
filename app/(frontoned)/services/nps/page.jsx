@@ -11,7 +11,7 @@ export const metadata = {
 const Nps = () => {
     return (
         <div className='main_section'>
-            <div className="container mx-auto px-4 md:px-20">
+            <div className="container mx-auto px-2">
                 
                 {/* Heading */}
                 <div className="pb-[20px]">
@@ -25,7 +25,8 @@ const Nps = () => {
                             The National Pension System (NPS) is a voluntary, long-term investment plan for retirement under the purview of the Pension Fund Regulatory and Development Authority (PFRDA) and the Government of India.
                         </p>
                         <p className="text-lg text-gray-700 mt-4 text-justify">
-                            It enables systematic savings during your working life, offering a mix of equity, corporate bonds, government securities, and alternative assets. NPS is one of the most tax-efficient instruments under Section 80CCD.
+                            It enables systematic savings during your working life, offering a mix of equity, corporate bonds, government securities, and alternative assets. NPS is one of the most tax-efficient instruments under Section 80CCD. It provides long-term retirement planning benefits with flexible contribution options, professional fund management, and the ability to choose your investment allocation. Over time, it helps build a substantial corpus, ensuring financial security post-retirement. Additionally, it offers portability across jobs and locations, making it an ideal retirement tool for the modern workforce.
+
                         </p>
                     </div>
                     <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">

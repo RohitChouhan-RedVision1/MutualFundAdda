@@ -4,14 +4,15 @@ import React from "react";
 const GeneralInsuranceContent = () => {
   return (
     <div className="main_section">
-    <div className="container mx-auto px-4 md:px-32 pt-10 ">
+    <div className="container mx-auto px-2 pt-10 ">
       <h2 className="text-2xl font-bold mb-4">General Insurance</h2>
 
       <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
-            General insurance protects your assets, health, and travel. It includes all types of insurance except life. Whether you're insuring your car, home, business, or trip — we offer tailored policies for all general insurance needs.
-          </p>
+  General insurance protects your assets, health, and travel. It includes all types of insurance except life. Whether you're insuring your car, home, business, or trip — we offer tailored policies for all general insurance needs. Our comprehensive range covers motor insurance to safeguard your vehicle against accidents, theft, and damages, as well as home insurance to protect your property and belongings from risks like fire, burglary, and natural disasters. For business owners, we provide commercial insurance solutions that shield your enterprise from liability and operational risks. Additionally, our travel insurance plans ensure you are covered for medical emergencies, trip cancellations, and lost luggage, giving you peace of mind wherever you go. Our experts will help you choose the best policies that fit your lifestyle and budget, providing reliable protection against unforeseen events.
+</p>
+
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
           <Image

@@ -12,7 +12,7 @@ export const metadata = {
 const LoanAgainstSecurities = () => {
   return (
     <div className="main_section">
-    <div className="container mx-auto px-4 md:px-20">
+    <div className="container mx-auto px-2">
       {/* Heading and Subheading */}
       <div className=" pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">
@@ -24,13 +24,9 @@ const LoanAgainstSecurities = () => {
       <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 mt-10 text-justify">
-            Loan Against Securities (LAS) allows you to borrow funds by pledging
-            your existing investments such as shares, mutual funds, bonds, or
-            insurance policies. This facility provides quick liquidity while
-            letting your investments continue to grow. It's an ideal solution
-            for short-term financial needs without compromising your long-term
-            financial goals.
-          </p>
+  Loan Against Securities (LAS) allows you to borrow funds by pledging your existing investments such as shares, mutual funds, bonds, or insurance policies. This facility provides quick liquidity while letting your investments continue to grow. It's an ideal solution for short-term financial needs without compromising your long-term financial goals. LAS offers competitive interest rates and flexible repayment options, making it a cost-effective borrowing alternative. Since the loan is secured against your assets, the approval process is faster with minimal documentation. Whether you need funds for business expansion, urgent medical expenses, or any other financial requirement, LAS helps you access money efficiently while maintaining ownership of your investments.
+</p>
+
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
           <Image

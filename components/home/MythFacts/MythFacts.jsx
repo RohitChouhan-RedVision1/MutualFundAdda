@@ -6,7 +6,7 @@ const MythFacts = () => {
     <div className="main_section">
       <div>
         <div>
-          <section className="container mx-auto">
+          <section className="container px-2 md:px-0 mx-auto">
             <div className="flex flex-wrap">
               <div className="w-full">
                 <div className="flex flex-col items-center justify-center text-center">

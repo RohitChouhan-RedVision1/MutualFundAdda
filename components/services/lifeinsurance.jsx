@@ -4,15 +4,16 @@ import React from "react";
 const LifeInsuranceContent = () => {
   return (
     <div className="main_section">
-    <div className="container mx-auto px-4 md:px-32 pt-10 ">
-      <h2 className="text-2xl font-bold">Life Insurance</h2>
+    <div className="container mx-auto px-2 pt-10 ">
+      <h2 className="text-2xl font-bold mb-5">Life Insurance</h2>
 
       {/* Introduction */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
-          <p className="text-lg text-gray-700 mt-10 text-justify">
-            Life insurance is a crucial financial tool that ensures your family's financial security in your absence. It not only offers peace of mind but also acts as a savings and investment avenue. Whether you're looking to protect your dependents, build long-term wealth, or plan for retirement, we offer a variety of life insurance products tailored to your specific needs.
-          </p>
+         <p className="text-lg text-gray-700  text-justify">
+  Life insurance is a crucial financial tool that ensures your family's financial security in your absence. It not only offers peace of mind but also acts as a savings and investment avenue. Whether you're looking to protect your dependents, build long-term wealth, or plan for retirement, we offer a variety of life insurance products tailored to your specific needs. From term insurance plans that provide high coverage at low premiums to endowment and ULIP plans that combine protection with growth, our solutions are designed to suit every stage of life. Additionally, life insurance can serve as an effective tool for tax planning and wealth transfer, ensuring a financially stable future for your loved ones. Our advisors are here to help you make informed decisions and select the right policy that aligns with your goals, affordability, and life priorities.
+</p>
+
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
           <Image

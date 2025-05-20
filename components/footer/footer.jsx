@@ -73,7 +73,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
     style={{ backgroundImage: "url('/bgshape.svg')" }}
   ></div>
       <div className="py-6">
-        <div className="container mx-auto px-4 lg:px-12 flex flex-col items-center justify-center">
+        <div className="container mx-auto px-2 md:px-0 flex flex-col items-center justify-center">
           <h2 className="text-4xl font-bold text-center text-white">
             Start Your Journey with <span className="font-bold">mutual</span>fundsadda Today
           </h2>
@@ -89,7 +89,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
         </div>
       </div>
 
-      <div className="relative z-1 container mx-auto px-4  lg:px-10  ">
+      <div className="relative z-1 container mx-auto px-2 md:px-0  ">
         <div className=" py-6 px-4 md:px-0 lg:-px-4 border-b-1 border-[#ffffff6b]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* About Us */}
@@ -247,7 +247,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
       </div>
 
       <div className="">
-        <div className="container mx-auto px-4 lg:px-12 pl-2 flex flex-col lg:flex-row items-center justify-between">
+        <div className="container mx-auto px-2 md:px-0  flex flex-col lg:flex-row items-center justify-between">
           <div className="disclaimer-sec text-center text-gray-400 mt-4 text-[16px]">
             <div className="content-b ">
               <p>
@@ -307,8 +307,8 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
       </div>
 
       {/* Copyright Section */}
-      <div className=" bg-[var(--primary)] pb-5 md:pb-0">
-        <div className="container mx-auto px-4 lg:px-10  flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
+      <div className=" bg-[var(--primary)] pb-5 md:pb-0 absolute w-full">
+        <div className="container mx-auto px-2 md:px-0  flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
           {/* Left: Logo */}
           <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
             <Link href="/">

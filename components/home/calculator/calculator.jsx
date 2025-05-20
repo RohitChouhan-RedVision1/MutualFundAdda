@@ -68,7 +68,7 @@ export default function Calculator() {
   }, [monthlyInvestment, investmentDuration, expectedReturn]);
   return (
     <div className="main_section">
-      <div className="container  mx-auto px-4 md:px-14   items-center text-center ">
+      <div className="container  mx-auto px-2 md:px-0   items-center text-center ">
         <div className="">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold uppercase">Power of Sip</h2>

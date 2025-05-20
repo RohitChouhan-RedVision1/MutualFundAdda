@@ -4,11 +4,12 @@ import React from "react";
 const Howwework = () => {
   return (
     <div className="bg-[#EFF1F9] main_section">
-      <div className="text-center mb-12">
+      
+
+      <div className="container mx-auto px-2 md:px-0">
+        <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold uppercase">How We Work</h2>
       </div>
-
-      <div className="container mx-auto px-4 md:px-14">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* KYC Menu Box */}
           <div className="w-full lg:w-1/3">

@@ -12,7 +12,7 @@ export const metadata = {
 const PortfolioManagementServices = () => {
   return (
     <div className="main_section">
-    <div className="container mx-auto px-4 md:px-20">
+    <div className="container mx-auto px-2">
       {/* Heading and Subheading */}
       <div className=" pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">
@@ -23,13 +23,7 @@ const PortfolioManagementServices = () => {
       <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
           <p className="text-lg text-gray-700 text-justify items-center justify-center lg:mt-10">
-            Unlock tailored Portfolio Management Services (PMS) to grow and
-            safeguard your wealth according to your unique financial objectives.
-            Portfolio Management Services involve professional management to
-            optimize your investments and help you achieve your financial goals.
-            Our team of experts will work with you to design a personalized
-            strategy that aligns with your risk tolerance, investment horizon,
-            and financial aspirations.
+            Unlock tailored Portfolio Management Services (PMS) to grow and safeguard your wealth according to your unique financial objectives. Portfolio Management Services involve professional management to optimize your investments and help you achieve your financial goals. Our team of experts will work with you to design a personalized strategy that aligns with your risk tolerance, investment horizon, and financial aspirations. With ongoing monitoring, performance reviews, and adjustments, we ensure your portfolio stays on track to meet your evolving needs and market conditions.
           </p>
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
@@ -44,7 +38,7 @@ const PortfolioManagementServices = () => {
       </div>
 
       {/* Product Description */}
-      <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
+      {/* <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2 lg:pr-8 flex justify-center mb-6 lg:mb-0">
           <Image
             src="/Services/pms-2.jpg"
@@ -64,7 +58,7 @@ const PortfolioManagementServices = () => {
             offers customized solutions to meet your individual needs.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="mb-5"></div>
 
       {/* Types of Portfolio Management Services */}

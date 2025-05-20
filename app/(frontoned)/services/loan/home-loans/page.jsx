@@ -11,7 +11,7 @@ export const metadata = {
 const HomeLoans = () => {
     return (
         <div className='main_section'>
-        <div className="container mx-auto px-4 md:px-20">
+        <div className="container mx-auto px-4 px-2">
             {/* Heading and Subheading */}
             <div className=" pb-[20px]">
                 <h1 className="text-2xl md:text-3xl font-bold uppercase">Home Loans</h1>
@@ -25,8 +25,9 @@ const HomeLoans = () => {
             <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-1/2">
                     <p className="text-lg text-gray-700 mt-10 text-justify">
-                        Home loans provide you with the necessary funds to purchase your dream home, renovate an existing property, or even refinance your current mortgage. With attractive interest rates and flexible repayment terms, home loans are a popular choice for many individuals looking to invest in real estate. We offer home loan options from leading financial institutions, with the ease of online application and quick approval processes.
-                    </p>
+  Home loans provide you with the necessary funds to purchase your dream home, renovate an existing property, or even refinance your current mortgage. With attractive interest rates and flexible repayment terms, home loans are a popular choice for many individuals looking to invest in real estate. We offer home loan options from leading financial institutions, with the ease of online application and quick approval processes. Our experts guide you through every step, helping you understand eligibility criteria, documentation, and loan structuring. Whether you are a first-time buyer or looking to upgrade, we tailor loan solutions to fit your financial goals, ensuring affordable EMIs and long-term financial stability. Secure your future with the right home loan that turns your dreams into reality.
+</p>
+
                 </div>
                 <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
                     <Image

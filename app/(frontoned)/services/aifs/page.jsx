@@ -11,7 +11,7 @@ export const metadata = {
 const AlternateInvestmentFunds = () => {
     return (
         <div className='main_section'>
-        <div className="container mx-auto px-4 md:px-20">
+        <div className="container mx-auto px-2">
             {/* Heading and Subheading */}
             <div className=" pb-[20px]">
                 <h1 className="text-2xl md:text-3xl font-bold uppercase">Alternate Investment Funds</h1>
@@ -27,8 +27,9 @@ const AlternateInvestmentFunds = () => {
                             <p className="text-lg text-gray-700 text-justify items-center">
                     Unlock tailored Alternate Investment Funds (AIFs) to grow and safeguard your wealth according to your unique financial objectives. AIFs provide an alternative investment route beyond traditional asset classes, offering exposure to diverse strategies such as private equity, venture capital, hedge funds, and more.
                 </p>
-                <p className="text-lg text-gray-700 items-center text-justify">
-                    AIFs are professionally managed investment funds that cater to high-net-worth individuals and institutional investors. These funds aim to generate superior returns through specialized strategies that include private investments, structured finance, and hedge fund techniques.
+                <p className="text-lg text-gray-700 items-center text-justify mt-4">
+AIFs are professionally managed investment funds that cater to high-net-worth individuals and institutional investors. These funds aim to generate superior returns through specialized strategies that include private investments, structured finance, and hedge fund techniques. They offer diversification, flexibility, and access to niche markets, making them ideal for investors seeking alternative avenues beyond traditional equity and debt instruments.
+
                 </p>
                             </div>
                             <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">

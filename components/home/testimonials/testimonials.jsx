@@ -52,13 +52,14 @@ const TestimonialsSlider = ({testimonial}) => {
 
   return (
     <section className="main_section bg-[#f3f6fa]">
-      <div className="text-center">
+      
+      <div className="container mx-auto px-2 md:px-0 relative">
+        <div className="text-center">
             <h2 className="text-3xl font-bold uppercase">OUR TESTIMONIALS</h2>
           </div>
-      <div className="container mx-auto px-4 lg:px-15 relative">
         <button
           onClick={() => sliderRef.current?.slickPrev()}
-          className="absolute left-5 top-1/2 -translate-y-1/2   w-10 h-10 flex items-center justify-center z-10"
+          className="absolute left-0 top-[60%] -translate-y-1/2   w-10 h-10 flex items-center justify-center z-10"
         >
           <ChevronLeft className="w-10 h-10 text-gray-700" />
         </button>
@@ -66,7 +67,7 @@ const TestimonialsSlider = ({testimonial}) => {
         {/* Next Arrow */}
         <button
           onClick={() => sliderRef.current?.slickNext()}
-          className="absolute right-5 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center z-10"
+          className="absolute right-0 top-[60%] -translate-y-1/2 w-10 h-10 flex items-center justify-center z-10"
         >
           <ChevronRight className="w-10 h-10 text-gray-700" />
         </button>

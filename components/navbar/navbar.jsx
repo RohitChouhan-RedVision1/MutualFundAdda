@@ -25,10 +25,10 @@ const Navbar = ({}) => {
 
   const servicedata = [
     { name: "Mutual Funds", link: "mutual-funds" },
-    { name: "PMS", link: "pms" },
-    { name: "AIFs", link: "aifs" },
-    { name: "NPS", link: "nps" },
-    { name: "Sovereign Gold Bonds", link: "sovereign-gold-bond" },
+    { name: "Portfolio Management Services (PMS)", link: "pms" },
+    { name: "Alternative Investment Funds (AIFs)", link: "aifs" },
+    { name: "National Pension System(NPS)", link: "nps" },
+    { name: "Sovereign Gold Bonds (SGB)", link: "sovereign-gold-bond" },
     { name: "Structural Products", link: "structural-products" },
     {
       name: "Insurance",
@@ -45,7 +45,7 @@ const Navbar = ({}) => {
         { name: "Loan Against Property", link: "loan/LAP" },
         {
           name: "Loans Against Mutual Fund",
-          link: "https://miraeassetfin.page.link/A143602",
+          link: "https://transact.miraeassetfin.com/register?ref=ooycTBj4sgqC5bLE5hEDsA%3D%3D",
           external: true,
         },
         {
@@ -64,7 +64,7 @@ const Navbar = ({}) => {
     { href: "/tools/financialhealth", text: "Financial health" },
     { href: "/tools/paypremiumonline", text: "Pay Premium online" },
     { href: "/tools/riskprofile", text: "Risk Profile" },
-    { href: "/tools/usefullinks", text: "Usefull Links" },
+    { href: "/tools/usefullinks", text: "Useful Links" },
   ];
 
   const aboutus = [
@@ -113,7 +113,7 @@ const Navbar = ({}) => {
 
             {/* Navigation (Hidden on Mobile) */}
             <nav className="screennavbar text-[16px]  space-x-4">
-              <Link href="/" className="text-white">
+              <Link href="/" className="text-white font-bold">
                 Home
               </Link>
 
@@ -122,7 +122,7 @@ const Navbar = ({}) => {
                 onMouseEnter={() => setIsMegaMenuAboutOpen(true)}
                 onMouseLeave={() => setIsMegaMenuAboutOpen(false)}
               >
-                <span className="text-white flex items-center cursor-pointer">
+                <span className="text-white flex items-center cursor-pointer font-bold">
                   About Us<span className="ml-1">&#x25BE;</span>
                 </span>
                 <AnimatePresence>
@@ -137,7 +137,7 @@ const Navbar = ({}) => {
                         <Link
                           key={index}
                           href={service.href}
-                          className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white"
+                          className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white font-bold"
                         >
                           {service.text}
                         </Link>
@@ -157,8 +157,8 @@ const Navbar = ({}) => {
                   setHoveredIndex(null);
                 }}
               >
-                <span className="text-white flex items-center cursor-pointer">
-                  Services <span className="ml-1">&#x25BE;</span>
+                <span className="text-white flex items-center cursor-pointer font-bold">
+                  Services <span className="ml-1 font-bold">&#x25BE;</span>
                 </span>
                 <AnimatePresence>
                   {isMegaMenuOpen && (
@@ -177,7 +177,7 @@ const Navbar = ({}) => {
                         >
                           {service.children ? (
                             <>
-                              <span className="px-4 py-2 hover:bg-[var(--primary)] hover:text-white cursor-pointer flex justify-between items-center">
+                              <span className="px-4 py-2 hover:bg-[var(--primary)] hover:text-white cursor-pointer font-bold flex justify-between items-center">
                                 {service.name}{" "}
                                 <span className="ml-2">&#x25B6;</span>
                               </span>
@@ -196,7 +196,7 @@ const Navbar = ({}) => {
                                           href={child.link}
                                           target="_blank"
                                           rel="noopener noreferrer"
-                                          className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white"
+                                          className="block px-4 py-2 hover:bg-[var(--primary)] font-bold hover:text-white"
                                         >
                                           {child.name}
                                         </a>
@@ -204,7 +204,7 @@ const Navbar = ({}) => {
                                         <Link
                                           key={cIndex}
                                           href={`/services/${child.link}`}
-                                          className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white"
+                                          className="block px-4 py-2 hover:bg-[var(--primary)] font-bold hover:text-white"
                                         >
                                           {child.name}
                                         </Link>
@@ -217,7 +217,7 @@ const Navbar = ({}) => {
                           ) : (
                             <Link
                               href={`/services/${service.link}`}
-                              className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white"
+                              className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white font-bold"
                             >
                               {service.name}
                             </Link>
@@ -233,7 +233,7 @@ const Navbar = ({}) => {
                 onMouseEnter={() => setIsMegaMenuToolsOpen(true)}
                 onMouseLeave={() => setIsMegaMenuToolsOpen(false)}
               >
-                <span className="text-white flex items-center cursor-pointer">
+                <span className="text-white flex items-center cursor-pointer font-bold">
                   Tools <span className="ml-1">&#x25BE;</span>
                 </span>
                 <AnimatePresence>
@@ -248,7 +248,7 @@ const Navbar = ({}) => {
                         <Link
                           key={index}
                           href={item.href}
-                          className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white"
+                          className="block px-4 py-2 font-bold hover:bg-[var(--primary)] hover:text-white"
                         >
                           {item.text}
                         </Link>
@@ -286,21 +286,24 @@ const Navbar = ({}) => {
                   )}
                 </AnimatePresence>
               </div> */}
-              <Link href="/nri-corner" className="text-white">
-                NRI corner
+              <Link href="/nri-corner" className="text-white font-bold">
+                NRI Corner
               </Link>
               {/* <Link href="/performance/fund-performance" className="text-white">
                 Fund Performance
               </Link> */}
-              <Link href="/blogs" className="text-white">
+              <Link href="/blogs" className="text-white font-bold">
                 Blog
+              </Link>
+              <Link href="/performance/fund-performance" className="text-white font-bold">
+                Fund Performance
               </Link>
               <div
                 className="relative group"
                 onMouseEnter={() => setIsMegaMenuContact(true)}
                 onMouseLeave={() => setIsMegaMenuContact(false)}
               >
-                <span className="text-white flex items-center cursor-pointer">
+                <span className="text-white flex items-center cursor-pointer font-bold">
                   Get In Touch<span className="ml-1">&#x25BE;</span>
                 </span>
                 <AnimatePresence>
@@ -315,7 +318,7 @@ const Navbar = ({}) => {
                         <Link
                           key={index}
                           href={item.href}
-                          className="block px-4 py-2 hover:bg-[var(--primary)] hover:text-white "
+                          className="block font-bold px-4 py-2 hover:bg-[var(--primary)] hover:text-white "
                         >
                           {item.text}
                         </Link>
@@ -329,12 +332,7 @@ const Navbar = ({}) => {
             {/* Portfolio Login Button (Hidden on Mobile) */}
             <div className="screennavbar md:flex gap-2 text-[16px]">
               <Link href="/login">
-                <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
-                  Invest now
-                </button>
-              </Link>
-              <Link href="/login">
-                <button className="bg-white text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
+                <button className="bg-white font-bold text-[var(--primary)] px-5 py-2 rounded-md transform transition-transform duration-300 hover:scale-105  cursor-pointer hover:border-white">
                   Login
                 </button>
               </Link>
@@ -357,7 +355,7 @@ const Navbar = ({}) => {
       animate={{ y: 0 }}
       exit={{ y: "-100%" }}
       transition={{ duration: 0.3 }}
-      className="absolute top-16 left-0 w-full bg-white z-50 max-h-[calc(100vh-4rem)] overflow-y-auto"
+      className="absolute top-14 left-0 w-full bg-white z-50 max-h-[calc(100vh-4rem)] overflow-y-auto"
     >
       <div className="p-6">
         {/* Mobile Navigation */}

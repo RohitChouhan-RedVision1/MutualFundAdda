@@ -12,7 +12,7 @@ export const metadata = {
 const IPOsAndNFOs = () => {
   return (
     <div className="main_section">
-      <div className="container mx-auto px-4 md:px-20">
+      <div className="container mx-auto px-2">
 
         {/* IPO Section */}
         <section className="mb-16">
@@ -22,8 +22,9 @@ const IPOsAndNFOs = () => {
           <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
             <div className="lg:w-1/2">
               <p className="text-lg text-gray-700 mt-10 text-justify">
-                An IPO allows you to invest in a company as it becomes publicly traded. You get the opportunity to become a shareholder at the earliest stage, often at competitive prices. IPOs can offer strong long-term returns, and our platform helps you stay updated and apply easily.
-              </p>
+  An IPO allows you to invest in a company as it becomes publicly traded. You get the opportunity to become a shareholder at the earliest stage, often at competitive prices. IPOs can offer strong long-term returns, and our platform helps you stay updated and apply easily. Participating in an IPO enables you to be part of a company’s growth journey from the beginning, potentially benefiting from capital appreciation as the company expands. However, it is important to carefully evaluate the company’s fundamentals, market conditions, and risks before investing. We provide detailed analysis, expert insights, and timely alerts to guide you through the IPO process, ensuring you make informed investment decisions that align with your financial goals.
+</p>
+
             </div>
             <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
               <Image
@@ -63,9 +64,10 @@ const IPOsAndNFOs = () => {
           </div>
           <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
             <div className="lg:w-1/2">
-              <p className="text-lg text-gray-700 mt-10 text-justify">
-                An NFO is the first-time subscription offer for a new mutual fund launched by an asset management company. Investors can purchase units at a nominal price, usually ₹10. NFOs are ideal for gaining exposure to new strategies and sectors not present in existing funds.
-              </p>
+             <p className="text-lg text-gray-700 mt-10 text-justify">
+  An NFO is the first-time subscription offer for a new mutual fund launched by an asset management company. Investors can purchase units at a nominal price, usually ₹10. NFOs are ideal for gaining exposure to new strategies and sectors not present in existing funds. They provide an opportunity to invest in emerging themes or innovative asset classes right from the start. However, since NFOs don’t have a performance track record, it is important to carefully analyze the fund’s objectives, management team, and investment strategy. Our platform offers comprehensive research and expert guidance to help you make informed decisions when investing in NFOs, ensuring alignment with your financial goals and risk appetite.
+</p>
+
             </div>
             <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
               <Image

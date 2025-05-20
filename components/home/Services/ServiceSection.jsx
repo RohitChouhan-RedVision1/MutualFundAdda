@@ -39,7 +39,7 @@ const ServiceSection = ({ services }) => {
 
   return (
     <section className=" main_section bg-[#EFF1F9]">
-      <div className="container mx-auto px-4 lg:px-10">
+      <div className="container mx-auto px-2 md:px-0">
         <div className="flex flex-col lg:flex-row gap-10 items-center mb-12">
           {/* Left Content */}
           <div className='w-full lg:w-1/2'>

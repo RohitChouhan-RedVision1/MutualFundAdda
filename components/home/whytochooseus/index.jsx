@@ -8,7 +8,7 @@ const WhytoChooseus = ({sitedata}) => {
   return (
     <div>
       <article className={`${styles.investor_corner} main_section`}>
-        <div className="mx-auto container px-4 sm:px-10 lg:px-8">
+        <div className="mx-auto container px-2 md:px-0 ">
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="w-full lg:w-1/2">
               <div className="flex flex-col md:flex-row gap-4">

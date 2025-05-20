@@ -14,31 +14,29 @@ const NriCorner = () => {
     <div className="main_section">
       <div className="container mx-auto px-4 md:px-32">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">
+        <h2 className="text-lg md:text-3xl font-bold uppercase mb-8">
           NRI CORNER
         </h2>
         {/* Introduction */}
         <div className="mb-8 text-lg text-gray-700 text-justify space-y-4">
           <p>NRI Corner – Your Gateway to Mutual Fund Investments in India</p>
           <p>
-            Welcome to the NRI Corner of mutualfundsadda – your trusted partner
-            for investing in Indian mutual funds from anywhere in the world. We
-            help you stay connected with India’s growth story while managing
-            your investments seamlessly and compliantly.
+            Welcome to the NRI Corner of <span className="font-bold">mutual</span>fundsadda – your trusted partner for investing in
+Indian mutual funds from anywhere in the world. We help you stay connected with
+India’s growth story while managing your investments seamlessly and compliantly.
           </p>
           <p>
-            However, NRIs are required to comply with all regulatory
-            requirements such as completion of KYC before investing. Also, a few
-            countries such as US and Canada have certain restrictions on
-            investments by NRIs in Mutual Funds without relevant disclosures.
-            Hence, NRIs from these countries must check with their Mutual fund
-            distributor before investing in Indian funds.
+            However, NRIs are required to comply with all regulatory requirements such as
+completion of KYC before investing. Also, a few countries such as US and Canada have
+certain restrictions on investments by NRIs in Mutual Funds without relevant
+disclosures. Hence, NRIs from these countries must check with their Mutual fund
+distributor before investing in Indian funds.
           </p>
         </div>
 
         {/* Why Should NRIs Invest in India */}
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+          <h2 className="text-lg font-semibold text-gray-800 mb-6">
             Why Should NRIs Invest in India?
           </h2>
           <p>
@@ -47,7 +45,7 @@ const NriCorner = () => {
           </p>
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>India’s Strong Economic Growth:</strong> India is one of
                 the fastest-growing major economies in the world, offering
@@ -56,7 +54,7 @@ const NriCorner = () => {
               </div>
             </li>
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>High Return Potential:</strong> Indian mutual funds,
                 especially equity funds, have historically delivered strong
@@ -65,7 +63,7 @@ const NriCorner = () => {
               </div>
             </li>
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>Rupee Appreciation Potential:</strong> Long-term
                 appreciation in the Indian Rupee can enhance overall returns
@@ -73,7 +71,7 @@ const NriCorner = () => {
               </div>
             </li>
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>Diversification:</strong> Investing in India helps NRIs
                 diversify their global portfolio by including exposure to
@@ -81,7 +79,7 @@ const NriCorner = () => {
               </div>
             </li>
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>Professional Fund Management:</strong>NRIs gain access
                 to funds managed by seasoned professionals and top-rated Asset
@@ -89,7 +87,7 @@ const NriCorner = () => {
               </div>
             </li>
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>Transparent and Well-Regulated Market:</strong> India’s
                 mutual fund industry is regulated by SEBI, ensuring investor
@@ -98,7 +96,7 @@ const NriCorner = () => {
               </div>
             </li>
             <li className="flex items-start">
-              <FaRegCheckCircle className="text-green-600 text-2xl flex-shrink-0 mt-1 mr-3" />
+              <FaRegCheckCircle className="text-green-600 text-lg flex-shrink-0 mt-1 mr-3" />
               <div>
                 <strong>Tax-Efficient Investment:</strong> Certain mutual fund
                 categories offer tax-efficient growth, and NRIs may also benefit
@@ -111,7 +109,7 @@ const NriCorner = () => {
 
         {/* Repatriation Section */}
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-lg font-semibold text-gray-800 mb-4">
             Repatriation
           </h2>
           <p className="text-gray-700 mb-4">
@@ -154,7 +152,7 @@ const NriCorner = () => {
 
         {/* How to Invest */}
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+          <h2 className="text-lg font-semibold text-gray-800 mb-6">
             How Can NRIs Invest in Indian Mutual Funds?
           </h2>
           <p className="text-gray-700 mb-6">
@@ -166,7 +164,7 @@ const NriCorner = () => {
             {/* Step 1 */}
             <li>
               <div className="flex items-start">
-                <FaRegCheckCircle className="text-green-600 text-2xl mt-1 mr-3 flex-shrink-0" />
+                <FaRegCheckCircle className="text-green-600 text-lg mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <strong>Step 1: Open an NRE/NRO Bank Account</strong>
                   <p className="mt-1">
@@ -193,7 +191,7 @@ const NriCorner = () => {
             {/* Step 2 */}
             <li>
               <div className="flex items-start">
-                <FaRegCheckCircle className="text-green-600 text-2xl mt-1 mr-3 flex-shrink-0" />
+                <FaRegCheckCircle className="text-green-600 text-lg mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <strong>Step 2: Complete KYC & FATCA Compliance</strong>
                   <p className="mt-1">
@@ -218,18 +216,16 @@ const NriCorner = () => {
             {/* Step 3 */}
             <li>
               <div className="flex items-start">
-                <FaRegCheckCircle className="text-green-600 text-2xl mt-1 mr-3 flex-shrink-0" />
+                <FaRegCheckCircle className="text-green-600 text-lg mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <strong>Step 3: Choose Investment Mode</strong>
-                  <p className="mt-1">You can invest through either:</p>
+                  <p className="mt-1">You can invest:</p>
                   <ul className="list-disc list-inside mt-2 pl-5 space-y-1">
                     <li>
-                      <strong>Online:</strong> Secure portal with paperless
-                      onboarding & transactions
+                      <strong>Online:</strong> through our secure portal (paperless onboarding & transactions)
                     </li>
                     <li>
-                      <strong>Offline:</strong> Physical forms submitted to your
-                      mutual fund distributor or AMC
+                      <strong>Offline:</strong> via physical forms submitted to your mutual fund distributor or AMC
                     </li>
                   </ul>
                 </div>
@@ -239,11 +235,11 @@ const NriCorner = () => {
             {/* Step 4 */}
             <li>
               <div className="flex items-start">
-                <FaRegCheckCircle className="text-green-600 text-2xl mt-1 mr-3 flex-shrink-0" />
+                <FaRegCheckCircle className="text-green-600 text-lg mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <strong>Step 4: Select the Right Fund</strong>
                   <p className="mt-1">
-                    Choose from a wide range of schemes based on:
+                    Choose from a wide range of schemes based on your:
                   </p>
                   <ul className="list-disc list-inside mt-2 pl-5 space-y-1">
                     <li>Investment goals</li>
@@ -262,11 +258,11 @@ const NriCorner = () => {
             {/* Step 5 */}
             <li>
               <div className="flex items-start">
-                <FaRegCheckCircle className="text-green-600 text-2xl mt-1 mr-3 flex-shrink-0" />
+                <FaRegCheckCircle className="text-green-600 text-lg mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <strong>Step 5: Start Investing</strong>
                   <p className="mt-1">
-                    You can start investing using any of the following options:
+                    You can invest via:
                   </p>
                   <ul className="list-disc list-inside mt-2 pl-5 space-y-1">
                     <li>Lumpsum Investment</li>
@@ -281,12 +277,13 @@ const NriCorner = () => {
             {/* Step 6 */}
             <li>
               <div className="flex items-start">
-                <FaRegCheckCircle className="text-green-600 text-2xl mt-1 mr-3 flex-shrink-0" />
+                <FaRegCheckCircle className="text-green-600 text-lg mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <strong>Step 6: Repatriate Your Funds</strong>
                   <p className="mt-1">
-                    Redemption proceeds can be repatriated easily based on the
-                    type of account (NRE/NRO) used for investment.
+                    Redemption proceeds can be repatriated easily based on the type of account
+(NRE/NRO) used for investment. TDS may apply based on fund category and holding
+period.
                   </p>
                   <p className="mt-1">
                     TDS may apply based on fund category and holding period.
@@ -299,7 +296,7 @@ const NriCorner = () => {
 
         {/* Disclaimer */}
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-lg font-semibold text-gray-800 mb-4">
             Disclaimer
           </h2>
           <p className="text-gray-700 mb-4">
@@ -314,35 +311,6 @@ AMC/Trustee/ Sponsor accept no liability whatsoever for any direct or consequent
 loss arising from any information provided in this note. Investors are advised to
 consult their tax advisor before taking any investment decision.
 
-          </p>
-          <p className="text-gray-700 mb-4">
-            You can have three kinds of bank accounts in India. You can open all
-            these three accounts with any bank in India and the accounts can be
-            used to make investments in India.
-          </p>
-          <p className="text-gray-700 mb-4">
-            Non-Resident External Rupee account (NRE account): Funds from an NRE
-            account can be repatriated abroad.
-          </p>
-
-          <p className="text-gray-700 mb-4">
-            Fully Convertible Non-Resident account (FCNR account): The FCNR
-            account involves a fixed deposit in a foreign currency. Funds from
-            this account can be repatriated abroad. However, this account cannot
-            be used for investing in a foreign currency.
-          </p>
-
-          <p className="text-gray-700 mb-4">
-            Non-Residential Ordinary account (NRO account): Funds from an NRO
-            account cannot be repatriated abroad.
-          </p>
-
-          <p className="text-gray-700 mb-4">
-            It must be noted that income and redemption amounts can be
-            repatriated only if you continue being an NRI at the time of
-            repatriation. Also note that you cannot invest in foreign currency;
-            in other words, your investments in Indian mutual funds must be made
-            in Indian rupees.
           </p>
         </div>
 

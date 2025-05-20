@@ -11,7 +11,7 @@ export const metadata = {
 const SovereignGoldBond = () => {
   return (
     <div className='main_section'>
-    <div className="container mx-auto px-4 md:px-20">
+    <div className="container mx-auto px-2">
       {/* Heading and Subheading */}
       <div className="pb-[20px]">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">Sovereign Gold Bond (SGB)</h1>
@@ -27,6 +27,10 @@ const SovereignGoldBond = () => {
           <p className="text-lg text-gray-700 mt-10 text-justify">
             Sovereign Gold Bonds (SGBs) are government-backed securities denominated in grams of gold. They offer an attractive alternative to physical gold investment, combining the benefits of gold price appreciation with a fixed annual interest. SGBs are a secure, cost-effective, and tax-efficient way to invest in gold without the hassle of storage or purity concerns.
           </p>
+          <p className="text-lg text-gray-700 mt-6 text-justify">
+  These bonds not only provide capital appreciation linked to the market price of gold but also offer an annual interest payout, making them a dual-benefit investment. SGBs have a tenure of eight years with an exit option after the fifth year, and the capital gains at maturity are tax-free, enhancing their appeal for long-term investors seeking stability and wealth preservation.
+</p>
+
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
           <Image

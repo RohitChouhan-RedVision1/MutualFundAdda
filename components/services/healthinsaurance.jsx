@@ -4,14 +4,15 @@ import React from "react";
 const HealthInsuranceContent = () => {
   return (
     <div className="bg-[#EFF1F9] main_section">
-    <div className="container mx-auto px-4 md:px-32 pt-10  ">
+    <div className="container mx-auto px-2 pt-10  ">
       <h2 className="text-2xl font-bold mb-4">Health Insurance</h2>
 
       <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-1/2">
-          <p className="text-lg text-gray-700 mt-10 text-justify">
-            Health insurance protects you and your family from high medical costs. With rising healthcare expenses, it ensures you receive timely medical care without financial strain. Our plans are customizable to meet your health needs and budget.
-          </p>
+          <p className="text-lg text-gray-700 text-justify">
+  Health insurance protects you and your family from high medical costs. With rising healthcare expenses, it ensures you receive timely medical care without financial strain. Our plans are customizable to meet your health needs and budget. From covering hospitalization, surgeries, and day-care procedures to offering cashless treatments at network hospitals, our policies are designed to offer comprehensive support during medical emergencies. Many plans also include benefits like annual health check-ups, maternity coverage, and critical illness protection. In addition, health insurance provides tax benefits under Section 80D of the Income Tax Act, making it a smart financial decision. Whether you’re an individual, part of a growing family, or planning for senior care, our wide range of options helps you stay prepared and protected. Let us assist you in choosing a policy that offers the right mix of affordability, flexibility, and robust coverage.
+</p>
+
         </div>
         <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
           <Image

@@ -44,7 +44,7 @@ const ToolsSection = () => {
   return (
     <div className="">
         <div className="container mx-auto main_section">
-        <div className={`px-8 ${styles.choose}`}>
+        <div className={`px-2 md:px-0 ${styles.choose}`}>
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold uppercase">Financial Tools</h2>
       </div>

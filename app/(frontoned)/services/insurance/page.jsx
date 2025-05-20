@@ -28,7 +28,7 @@ const Insurance = () => {
   return (
     <div className="main_section">
       {/* Heading and Subheading */}
-      <div className="container mx-auto px-4 md:px-32">
+      <div className="container mx-auto px-2">
         <h1 className="text-2xl md:text-3xl font-bold uppercase">Insurance</h1>
       </div>
 

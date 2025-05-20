@@ -11,7 +11,7 @@ export const metadata = {
 const LoanAgainstProperty = () => {
     return (
         <div className='main_section'>
-        <div className="container mx-auto px-4 md:px-20 ">
+        <div className="container mx-auto px-2 ">
             {/* Heading and Subheading */}
             <div className=" pb-[20px]">
                 <h1 className="text-2xl md:text-3xl font-bold uppercase">Loan Against Property (LAP)</h1>
@@ -25,8 +25,9 @@ const LoanAgainstProperty = () => {
             <div className="mb-5 flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-1/2">
                     <p className="text-lg text-gray-700 mt-10 text-justify">
-                        Loan Against Property (LAP) is a secured loan where you can leverage your property (residential, commercial, or industrial) as collateral to access funds for various personal or business needs. Whether you're looking for financial assistance for a home renovation, education, or expanding your business, LAP offers competitive interest rates and flexible repayment terms.
-                    </p>
+  Loan Against Property (LAP) is a secured loan where you can leverage your property (residential, commercial, or industrial) as collateral to access funds for various personal or business needs. Whether you're looking for financial assistance for a home renovation, education, or expanding your business, LAP offers competitive interest rates and flexible repayment terms. This loan option provides higher loan amounts compared to unsecured loans, making it ideal for significant expenses. Additionally, LAP usually has longer tenure options, allowing you to manage repayments comfortably. Our team helps you understand the eligibility criteria, documentation process, and guides you in selecting the best loan product tailored to your requirements, ensuring a hassle-free experience from application to disbursal.
+</p>
+
                 </div>
                 <div className="lg:w-1/2 lg:pl-8 flex justify-center mt-6 lg:mt-0">
                     <Image
