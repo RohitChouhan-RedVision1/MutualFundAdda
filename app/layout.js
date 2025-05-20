@@ -2,15 +2,15 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 export const metadata = {
   title: {
-    default: "Mutual Funds Adda",
-    template: "%s - Mutual Funds Adda",
+    default: "mutualfundsadda",
+    template: "%s - mutualfundsadda",
   },
-  description: "Mutual Funds Adda helping them make informed decisions to achieve their financial goals with confidence",
+  description: "mutualfundsadda helping them make informed decisions to achieve their financial goals with confidence",
   twitter: {
     card: "summary_large_image",
     site: "@mutualfundsadda", // Twitter handle of Alpha 72
   },
-  author: "Mutual Funds Adda Team",
+  author: "mutualfundsadda Team",
 };
 
 

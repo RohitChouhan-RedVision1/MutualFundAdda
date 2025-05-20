@@ -23,7 +23,7 @@ const Tickers = () => {
     fetchData();
     const interval = setInterval(() => {
       fetchData();
-    }, 30000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

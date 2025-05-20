@@ -296,10 +296,10 @@ period.
 
         {/* Disclaimer */}
         <div className="mb-8">
-          <h2 className="text-lg font-semibold text-gray-800 mb-4">
+          <h2 className="text-md font-semibold text-gray-800 mb-4">
             Disclaimer
           </h2>
-          <p className="text-gray-700 mb-4">
+          <span className="text-gray-700 text-sm mb-4">
             The above information is provided for basic guidance for investments in mutual funds
 and is based on provisions of the Income-tax Act, 1961, as sought to be amended by
 the Finance Bill, 2022. The tax implications may vary for each assessee based on the
@@ -311,7 +311,7 @@ AMC/Trustee/ Sponsor accept no liability whatsoever for any direct or consequent
 loss arising from any information provided in this note. Investors are advised to
 consult their tax advisor before taking any investment decision.
 
-          </p>
+          </span>
         </div>
 
       </div>

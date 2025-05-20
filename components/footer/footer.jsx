@@ -59,10 +59,10 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
   const tools = [
     { href: "/tools/calculators", text: "Calculators" },
     { href: "/tools/downloadforms", text: "Download Form" },
-    { href: "/tools/financialhealth", text: "Financial health" },
-    { href: "/tools/paypremiumonline", text: "Pay Premium online" },
+    { href: "/tools/financialhealth", text: "Financial Health" },
+    { href: "/tools/paypremiumonline", text: "Pay Premium Online" },
     { href: "/tools/riskprofile", text: "Risk Profile" },
-    { href: "/tools/usefullinks", text: "Usefull Links" },
+    { href: "/tools/usefullinks", text: "Useful Links" },
   ];
   return (
     <div className="relative">
@@ -107,7 +107,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
                 </li>
                 <li>
                   <Link href="/aboutus" className="hover:text-white">
-                    About us
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -117,7 +117,7 @@ export function Footer({ sitedata, servicedata, arn, SocialMedia }) {
                 </li>
                 <li>
                   <Link href="/contactus" className="hover:text-white">
-                    Contact us
+                    Contact Us
                   </Link>
                 </li>
                 <li>

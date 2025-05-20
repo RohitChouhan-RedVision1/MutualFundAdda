@@ -76,7 +76,7 @@ export default function MarketUpdate() {
   useEffect(() => {
     fetchCategories();
   }, []);
-
+console.log(categories)
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
     fetchSchemes(category);
@@ -161,7 +161,7 @@ export default function MarketUpdate() {
                 <div
                   key={index}
                   className={`px-3 py-3 ${
-                    selectedScheme === scheme ? "bg-[#00aeef]/80" : "bg-white"
+                    selectedScheme === scheme ? "bg-[var(--primary)]" : "bg-white"
                   } border border-gray-200 rounded shadow cursor-pointer my-2`}
                   onClick={() => handleSchemeSelect(scheme)}
                 >
