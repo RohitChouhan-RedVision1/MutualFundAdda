@@ -81,7 +81,7 @@ export default function ContactForm({ sitedata }) {
         name="username"
         type="text"
         placeholder="Name*"
-        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
+        className="w-full px-8 py-4 rounded-lg font-medium placeholder-red-500 bg-[#E8EFFE] border border-gray-200  text-sm focus:outline-none focus:border-gray-400"
         value={formData.username}
         onChange={handleChange}
         required
@@ -91,7 +91,7 @@ export default function ContactForm({ sitedata }) {
         name="mobile"
         type="tel"
         placeholder="Mobile*"
-        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-red-500 text-sm focus:outline-none focus:border-gray-400"
         value={formData.mobile}
         onChange={handleChange}
         required
@@ -101,7 +101,7 @@ export default function ContactForm({ sitedata }) {
         name="email"
         type="email"
         placeholder="Email*"
-        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-red-500 text-sm focus:outline-none focus:border-gray-400"
         value={formData.email}
         onChange={handleChange}
         required
@@ -130,7 +130,7 @@ export default function ContactForm({ sitedata }) {
       <textarea
         name="message"
         placeholder="Message"
-        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 h-32"
+        className="w-full px-8 py-4 rounded-lg font-medium bg-[#E8EFFE] border border-gray-200 placeholder-red-500 text-sm focus:outline-none focus:border-gray-400 h-32"
         value={formData.message}
         onChange={handleChange}
         // required
