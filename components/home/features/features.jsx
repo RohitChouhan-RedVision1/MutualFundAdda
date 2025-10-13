@@ -59,7 +59,7 @@ function Features() {
               <h4 className="font-semibold text-2xl mb-4">Download our app now</h4>
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://play.google.com/store/search?q=wealth+elite&c=apps"
+                  href="https://play.google.com/store/apps/details?id=com.mutualfundsadda.com.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transform transition-transform duration-300 hover:scale-105"
@@ -71,7 +71,7 @@ function Features() {
                   />
                 </a>
                 <a
-                  href="https://apps.apple.com/us/app/wealth-elite/id1518518606"
+                  href="https://apps.apple.com/app/mutualfundsadda/id6745604379"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transform transition-transform duration-300 hover:scale-105"
